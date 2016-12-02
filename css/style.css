@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'myraid';
+  src: url('../fonts/MyriadPro-Regular.eot');
+  src: url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+       url('../fonts/MyriadPro-Regular.woff') format('woff'),
+       url('../fonts/MyriadPro-Regular.ttf') format('truetype'),
+       url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg'),
+       url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'oswald';
+  src: url('../fonts/Oswald-Regular.eot');
+  src: url('../fonts/Oswald-Regular.woff2') format('woff2'),
+       url('../fonts/Oswald-Regular.woff') format('woff'),
+       url('../fonts/Oswald-Regular.ttf') format('truetype'),
+       url('../fonts/Oswald-Regular.svg#Oswald-Regular') format('svg'),
+       url('../fonts/Oswald-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	overflow-x: hidden;
+}
+#head-img{
+	position: relative;
+	z-index: -1;
+	background:url("../img/header_img.jpg");	
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 1366px;
+	height: 666px;
+	transition: all 0.5s;
+}
+#main{
+	transition: margin-left 0.5s,background 0.5s;
+}
+button{
+	position: fixed;
+	background: transparent;
+	padding: 5px;
+	color: #05487F;
+	margin: 10px 0px 0px 10px;
+	border: none;
+	transition: 0.3s;
+}
+button:hover{
+	color: #fff;
+	background:#05487F;
+	border-radius: 4px;
+}
+#close-btn{
+	position: relative;
+	left: 80px;
+	bottom: 120px;
+	color: #fff;
+	transition: all 0.3s;
+}
+#close-btn:hover{
+	color: #05487F;
+	background: white;
+
+}
+
+#navbar{
+	position: fixed;
+	z-index: 1;
+	background: #05487F;
+	width: 0;
+	height: 1000px;
+	padding-top: 10%;
+	overflow-x: hidden;
+	transition: all .5s;
+	white-space: nowrap;
+}
+#navbar ul{
+	list-style: none;
+}
+#navbar ul li{
+	padding: 10px;
+}
+#navbar a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	font-family: 'myraid';
+}
+h1{
+	font-size: 72px;
+	text-align: center;
+	font-family: 'oswald';
+	letter-spacing: 1px;
+	color: #05487F;
+}
+
+h2{
+	text-align: center;
+	font-size: 50px;
+	font-family: 'oswald';
+	color: #fff;
+}
+.about{
+	position: relative;
+	z-index: -1;
+	background: #05487f;
+}
+.about>p{
+	padding: 20px;
+	font-size: 24px;
+	color: #fff;
+	font-family: 'myraid';
+}
+.testimonials{
+	text-align: center;
+}
+.testimonials div{
+	display: inline-block;
+	width: 20%;
+	height: 200px;
+	background: green; 
+}
+.popup{
+	display: none;
+}
