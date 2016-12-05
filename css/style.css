@@ -30,30 +30,34 @@
 }
 
 body{
-	overflow-x: hidden;
+	overflow-x: scroll;
+	display: flex;
+	
 }
 main{
+	width: 100%;
+	height: auto;
 	transition: margin-left 0.5s,background 0.5s;
-	width: 1200px;
-	margin:auto;
+	flex-grow: 1;
 }
 
 /*header section*/
+
 #head-img{
-	position: relative;
-	z-index: -1;
+	position:relative;
 	background:url("../img/header_img2.jpg");	
 	background-size: 100%;
 	background-repeat: no-repeat;
-	width: 1200px;
-	max-width: 1366px;
+	flex-grow: 1;
 	height: 630px;
 	transition: all 0.5s;
+
 }
 
 /*invoke navbar button*/
 button{
 	position: fixed;
+	z-index: 90;
 	background: transparent;
 	padding: 5px;
 	color: #05487F;
@@ -83,7 +87,7 @@ button:hover{
 /*side slide navbar*/
 #navbar{
 	position: fixed;
-	z-index: 1;
+	z-index: 99;
 	background: #05487F;
 	width: 0;
 	height: 1000px;
@@ -113,13 +117,12 @@ ul li{
 
 /*Only h1*/
 .heading{
+	position: relative;
+	width: 100%;
 	height: auto;
-	width: 1200px;
-	max-width: 1366px;
+
 }
 h1{
-	position:relative;
-	z-index: -1;
 	font-size: 72px;
 	text-align: center;
 	font-family: 'oswald';
@@ -135,11 +138,11 @@ h2{
 /*first section - about*/
 .about{
 	position: relative;
-	z-index: -1;
 	background: #05487f;
 	white-space:normal;
-	width: 1200px;
+	width: 100%;
 	opacity: 0.9;
+	text-overflow: ellipsis;
 }
 .about h2{
 	color: #fff;
@@ -171,18 +174,27 @@ h2{
 	display: none;
 }
 
+.triangle{
+	position: relative;
+	margin: auto;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 150px 600px 0 600px;
+	border-color: #05487f transparent transparent transparent;
+	opacity: 0.9;
+}
 /*robocon 17 starts*/
 .robocon17{
-	width: 1200px;
+	position: relative;
+	width: 100%;
+	color: #05487F;
+	text-align: center;
 }
 .robocon17 div{
 	width: 50%;
 	height: 400px;
 	float: left;
-}
-.robocon17{
-	color: #05487F;
-	text-align: center;
 }
 h3{
 	margin-top: 30px;
@@ -203,8 +215,7 @@ h3{
 	padding: 20px;
 }
 .robo_des a{
-	text-decoration: none;<!-- this is robocon 17-->	
-
+	text-decoration: none;
 	color: #fff;
 	font-family: 'myraid';
 	font-size: 24px;
@@ -219,7 +230,8 @@ iframe{
 /*this is library and gallary*/
 
 .lib_gal{
-	width: 1200px;
+	position: relative;
+	width: 100%;
 	text-align: center;
 }
 .lib_gal div{
@@ -239,7 +251,7 @@ iframe{
 	margin-top: 40px;
 }
 .lib ul li{
-	padding: 10px;
+	padding: 5px;
 }
 .lib_gal a{
 	text-decoration: none;
@@ -252,7 +264,8 @@ iframe{
 	height: 150px;
 }
 .sponsors{
-	width: 1200px;
+	position: relative;
+	width: 100%;
 }
 .sponsors h2{
 	color: #05487f;
@@ -272,9 +285,9 @@ iframe{
 
 }
 .contact{
-	width: 1200px;
-	text-align: center;	
-	
+	position: relative;
+	width: 100%;
+	text-align: center;		
 }
 .contact h2{
 	color: #05487f;

@@ -1,4 +1,4 @@
-document.getElementById("open-btn").addEventListener('click',function openNav(){
+/*document.getElementById("open-btn").addEventListener('click',function openNav(){
 	document.getElementById("navbar").style.width = "15%";
 	document.getElementById("main").style.marginLeft = "15%";
 	document.getElementById("main").style.backgroundColor="rgba(0,0,0,0.9)";
@@ -11,23 +11,54 @@ document.getElementById("close-btn").addEventListener('click',function closeNav(
 	document.getElementById("main").style.marginLeft = "0";
 	document.getElementById("main").style.backgroundColor="transparent";
 	document.getElementById("head-img").style.position ="static";
+}); */
+
+$("#open-btn").bind("click",function (){
+	$("#navbar").css("width","15%");
+	$("#main").css("margin-left","15%");
+	$("#main").css("background","rgba(0,0,0,0.9)");
+	$("#main").children().css("z-index","-1");
+	$("header").children().css("z-index","-1");
+
 });
 
-//$("#open-btn").addEventListener("click",)
+$("#close-btn").bind("click",function(){
+	$("#navbar").css("width","0");
+	$("#main").css("margin-left","0");
+	$("#main").css("background","");
+	$("#main").children().css("z-index","");
+	$("header").children().css("z-index","");
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $(document).ready(function(){
 
 $(".lib>ul>li>img").hide();
 
 $(".lib>ul>li>a").on("mouseover",function(){
-	$(".lib ul li img").slideDown(400);
+	$("#omni").stop().slideDown(400);
 }).on("mouseout",function(){
-	$(".lib>ul>li>img").slideUp(400);
+	$("#omni").slideUp(400);
 });
 
 
 });
 
-
+/*slider*/
 	
 var sliderOptions=
 {
