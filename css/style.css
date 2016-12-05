@@ -30,28 +30,26 @@
 }
 
 body{
-	overflow-x: scroll;
-	display: flex;
+	overflow-x:hidden;
 	
 }
 main{
 	width: 100%;
 	height: auto;
 	transition: margin-left 0.5s,background 0.5s;
-	flex-grow: 1;
 }
 
 /*header section*/
-
+header{
+	width: 100%;
+}
 #head-img{
-	position:relative;
-	background:url("../img/header_img2.jpg");	
-	background-size: 100%;
-	background-repeat: no-repeat;
-	flex-grow: 1;
-	height: 630px;
+	width: 100%;
+	position:relative;	
 	transition: all 0.5s;
-
+}
+#head-img img{
+	width: 100%;
 }
 
 /*invoke navbar button*/
@@ -60,7 +58,7 @@ button{
 	z-index: 90;
 	background: transparent;
 	padding: 5px;
-	color: #05487F;
+	color: green;
 	margin: 10px 0px 0px 10px;
 	border: none;
 	transition: 0.3s;
@@ -73,7 +71,7 @@ button:hover{
 
 /*close navbar button*/
 #close-btn{
-	position:relative;
+	position:fixed;
 	left: 70%;
 	bottom: 129px;
 	color: #fff;
@@ -89,8 +87,8 @@ button:hover{
 	position: fixed;
 	z-index: 99;
 	background: #05487F;
-	width: 0;
-	height: 1000px;
+	width: 0;	
+	height: 99999999999px;
 	padding-top: 10%;
 	overflow-x: hidden;
 	transition: all .5s;
@@ -123,7 +121,7 @@ ul li{
 
 }
 h1{
-	font-size: 72px;
+	font-size: 5.2vw;
 	text-align: center;
 	font-family: 'oswald';
 	letter-spacing: 1px;
@@ -132,7 +130,7 @@ h1{
 /*all subheading like about , sponsors etc*/
 h2{
 	text-align: center;
-	font-size: 50px;
+	font-size: 4vw;
 	font-family: 'oswald';
 }
 /*first section - about*/
@@ -142,14 +140,13 @@ h2{
 	white-space:normal;
 	width: 100%;
 	opacity: 0.9;
-	text-overflow: ellipsis;
 }
 .about h2{
 	color: #fff;
 }
 .about>p{
 	padding: 20px;
-	font-size: 24px;
+	font-size: 1.9vw;
 	color: #fff;
 	font-family: 'myraid';
 
@@ -187,19 +184,20 @@ h2{
 /*robocon 17 starts*/
 .robocon17{
 	position: relative;
+	z-index: 1;
 	width: 100%;
 	color: #05487F;
 	text-align: center;
 }
 .robocon17 div{
 	width: 50%;
-	height: 400px;
+	height: 29.2vw;
 	float: left;
 }
 h3{
 	margin-top: 30px;
 	font-family: 'oswald';
-	font-size: 24px;
+	font-size: 1.9vw;
 	text-decoration: underline;
 	letter-spacing: 1px;
 }
@@ -207,7 +205,7 @@ h3{
 	margin-top:70px;
 	margin-bottom: 50px;
 	padding: 20px;
-	font-size: 20px;
+	font-size: 1.9vw;
 	font-family: 'myraid';
 }
 .robo_des span{
@@ -218,7 +216,7 @@ h3{
 	text-decoration: none;
 	color: #fff;
 	font-family: 'myraid';
-	font-size: 24px;
+	font-size: 1.9vw;
 }
 .video{
 	background: #05487F;
@@ -231,6 +229,7 @@ iframe{
 
 .lib_gal{
 	position: relative;
+	z-index: 1;
 	width: 100%;
 	text-align: center;
 }
@@ -271,10 +270,10 @@ iframe{
 	color: #05487f;
 }
 .sponsors div{
-	width: 23%;
+	width: 20%;
 	height: 180px;
 	float: left;
-	padding-left: 10px;
+	padding-left: 0px;
 }
 .sponsors section{
 	height: 220px;

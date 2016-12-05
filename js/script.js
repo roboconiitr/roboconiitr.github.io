@@ -16,14 +16,17 @@ document.getElementById("close-btn").addEventListener('click',function closeNav(
 $("#open-btn").bind("click",function (){
 	$("#navbar").css("width","15%");
 	$("#main").css("margin-left","15%");
+	
 	$("#main").css("background","rgba(0,0,0,0.9)");
 	$("#main").children().css("z-index","-1");
 	$("header").children().css("z-index","-1");
+	$("#navbar").css("min-width","200px");
 
 });
 
 $("#close-btn").bind("click",function(){
 	$("#navbar").css("width","0");
+	$("#navbar").css("min-width","0");
 	$("#main").css("margin-left","0");
 	$("#main").css("background","");
 	$("#main").children().css("z-index","");
