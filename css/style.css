@@ -44,11 +44,13 @@ header{
 	width: 100%;
 }
 #head-img{
+	border: 2px solid #000;
 	width: 100%;
 	position:relative;	
 	transition: all 0.5s;
 }
 #head-img img{
+
 	width: 100%;
 }
 
@@ -56,32 +58,37 @@ header{
 button{
 	position: fixed;
 	z-index: 90;
-	background: transparent;
 	padding: 5px;
-	color: green;
+	color: #fff;
+	
 	margin: 10px 0px 0px 10px;
 	border: none;
 	transition: 0.3s;
 }
+#open-btn{
+	background: #2b2b2b;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
+}
 button:hover{
-	color: #fff;
-	background:#05487F;
-	border-radius: 4px;
+	border-radius: 10px;
+
+}
+button:hover i{
+	transform: rotate(360deg);
 }
 
 /*close navbar button*/
 #close-btn{
-	position:fixed;
-	left: 70%;
-	bottom: 129px;
+	position:relative;
+	left: 11vw;
+	background: transparent;
+	bottom: 9.4vw;
 	color: #fff;
 	transition: all 0.3s;
 }
 #close-btn:hover{
-	color: #05487F;
-	background: white;
+	border-radius: 10px;
 }
-
 /*side slide navbar*/
 #navbar{
 	position: fixed;
@@ -98,13 +105,13 @@ ul{
 	list-style: none;
 }
 ul li{
-	padding: 10px 10px 10px 20px;
+	padding: 0.8vw 0.8vw 0.8vw 1.5vw;
 	transition: all .3s;
 }
 #navbar a{
 	text-decoration: none;
 	color: #fff;
-	font-size: 24px;
+	font-size: 1.75vw;
 	font-family: 'myraid';
 }
 #navbar li:hover{
@@ -113,11 +120,12 @@ ul li{
 	text-shadow: 1px 1px 3px #fff;
 }
 
+
 /*Only h1*/
 .heading{
+	border: 2px solid #000;
 	position: relative;
 	width: 100%;
-	height: auto;
 
 }
 h1{
@@ -135,6 +143,7 @@ h2{
 }
 /*first section - about*/
 .about{
+	border:2px solid #000;
 	position: relative;
 	background: #05487f;
 	white-space:normal;
@@ -145,25 +154,29 @@ h2{
 	color: #fff;
 }
 .about>p{
-	padding: 20px;
+	padding: 20px 45px;
 	font-size: 1.9vw;
 	color: #fff;
 	font-family: 'myraid';
+	border:2px solid #000;
 
 }
 /*testimonial part of about*/
 .testimonials{
 	text-align: center;
+	height: 18.3vw;
+	font-size: 1.17vw;
 }
 .testimonials div{
-	display: inline-block;
+	margin-left: 13%;
+	float:left;
 	width: 15%;
-	height: 250px;
+	height: 18.3vw;
 	background: green; 
 }
 .testimonials img{
 	width: 70%;
-	height: 150px;
+	height: 11vw;
 	border-radius: 10px;
 }
 /*pop up on hover over testimonials*/
@@ -177,40 +190,42 @@ h2{
 	width: 0;
 	height: 0;
 	border-style: solid;
-	border-width: 150px 600px 0 600px;
+	border-width: 11vw 44vw 0 44vw;
 	border-color: #05487f transparent transparent transparent;
 	opacity: 0.9;
 }
 /*robocon 17 starts*/
 .robocon17{
+	border: 2px solid #000;
 	position: relative;
 	z-index: 1;
 	width: 100%;
+	height: 44vw;
 	color: #05487F;
 	text-align: center;
 }
 .robocon17 div{
-	width: 50%;
-	height: 29.2vw;
+	width: 50%;	
+	height: 38.3vw;
 	float: left;
 }
 h3{
-	margin-top: 30px;
+	margin-top: 2.2vw;
 	font-family: 'oswald';
 	font-size: 1.9vw;
 	text-decoration: underline;
 	letter-spacing: 1px;
 }
 .robo_des p{
-	margin-top:70px;
-	margin-bottom: 50px;
-	padding: 20px;
+	margin-top:5.2vw;
+	margin-bottom: 3.7vw;
+	padding: 1.5vw 2.9vw;
 	font-size: 1.9vw;
 	font-family: 'myraid';
 }
 .robo_des span{
 	background: #05487F;
-	padding: 20px;
+	padding: 1.5vw;
 }
 .robo_des a{
 	text-decoration: none;
@@ -223,31 +238,35 @@ h3{
 }
 iframe{
 	width: 90%;
-	height: 400px;
+	height: 38.3vw;
 }
 /*this is library and gallary*/
 
 .lib_gal{
+	border: 2px solid #000;
 	position: relative;
 	z-index: 1;
+	height: 29.3vw;
 	width: 100%;
 	text-align: center;
 }
 .lib_gal div{
 	width: 50%;
-	height: 400px;
+	height: 29.3vw;
 	float: left;
 }
 .lib{
 	background: #05487f;
 	color: #fff;
+	height: 29.3vw;
 }
 .gall{
 	color: #05487f;
+	height: 29.3vw;
 
 }
 .lib ul{
-	margin-top: 40px;
+	margin-top: 3vw;
 }
 .lib ul li{
 	padding: 5px;
@@ -255,35 +274,39 @@ iframe{
 .lib_gal a{
 	text-decoration: none;
 	color: #fff;
-	font-size:24px;
+	font-size:1.8vw;
 	font-family: 'myraid';
 }
 .lib ul img{
-	width: 200px;
-	height: 150px;
+	display: none;
+	width: 14.7vw;
+	height: 11vw;
 }
 .sponsors{
 	position: relative;
 	width: 100%;
+	border: 2px solid #000;
 }
 .sponsors h2{
 	color: #05487f;
 }
 .sponsors div{
-	width: 20%;
-	height: 180px;
+	width: 25%;
+	height: 13.2vw;
 	float: left;
-	padding-left: 0px;
+	//border:2px solid #000;
+	text-align: center;
 }
 .sponsors section{
-	height: 220px;
+	height: 16.1vw;
 }
 .sponsors img{
-	width: 100%;
-	height: 200px;
+	width: 70%;
+	height: 12.8vw;
 
 }
 .contact{
+	border: 2px solid #000;
 	position: relative;
 	width: 100%;
 	text-align: center;		
@@ -292,16 +315,16 @@ iframe{
 	color: #05487f;
 }
 .contact h3{
-	font-size: 72px;
+	font-size: 5.3vw;
 	text-decoration: none;
 }
 .contact h5{
-	font-size: 30px;
+	font-size: 2.2vw;
 	color: #05487f;
 }
 .part1 div{
 	width: 50%;
-	height:250px;
+	height:18.3vw;
 	float: left;
 	background: green;
 }

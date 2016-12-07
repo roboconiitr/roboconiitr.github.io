@@ -13,20 +13,20 @@ document.getElementById("close-btn").addEventListener('click',function closeNav(
 	document.getElementById("head-img").style.position ="static";
 }); */
 
-$("#open-btn").bind("click",function (){
+$("#open-btn").bind("click",function openNav(){
 	$("#navbar").css("width","15%");
 	$("#main").css("margin-left","15%");
 	
 	$("#main").css("background","rgba(0,0,0,0.9)");
 	$("#main").children().css("z-index","-1");
 	$("header").children().css("z-index","-1");
-	$("#navbar").css("min-width","200px");
+	//$("#navbar").css("min-width","200px");
 
 });
 
-$("#close-btn").bind("click",function(){
+$("#close-btn").bind("click",function closeNav(){
 	$("#navbar").css("width","0");
-	$("#navbar").css("min-width","0");
+	//$("#navbar").css("min-width","0");
 	$("#main").css("margin-left","0");
 	$("#main").css("background","");
 	$("#main").children().css("z-index","");
@@ -35,6 +35,24 @@ $("#close-btn").bind("click",function(){
 });
 
 
+$("#open-btn").bind("mouseover",function(){
+	$(".fa-bars").addClass("animated flip");
+
+});
+$("#open-btn").bind("mouseout",function(){
+	$(".fa-bars").removeClass("animated flip");
+
+});
+
+$("#close-btn").bind("mouseover",function(){
+	$(".fa-times").addClass("animated wobble");
+});
+$("#close-btn").bind("mouseout",function(){
+	$(".fa-times").removeClass("animated wobble");
+
+});
+
+$(".sponsors").scrollIntoView({ behavior:'smooth'});
 
 
 
