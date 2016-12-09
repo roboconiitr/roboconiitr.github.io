@@ -167,7 +167,7 @@ h2{
 	height: 18.3vw;
 	font-size: 1.17vw;
 }
-.testimonials div{
+.testimonials>div{
 	margin-left: 13%;
 	float:left;
 	width: 15%;
@@ -180,12 +180,24 @@ h2{
 	border-radius: 10px;
 }
 /*pop up on hover over testimonials*/
-.popup{
+.popin{
+	background: #2b2b2b;
+	color: #fff;
+	padding: 20px;
+	font-family: 'myraid';
+	font-size: 20px;
+	text-align: center;	
 	display: none;
+	position: fixed;
+	z-index: 75;
+	left: 15%;
+	bottom: 250px;
+	width: 75%;
 }
 
 .triangle{
 	position: relative;
+	z-index: -1;
 	margin: auto;
 	width: 0;
 	height: 0;
@@ -243,6 +255,8 @@ iframe{
 /*this is library and gallary*/
 
 .lib_gal{
+	position: relative;
+	z-index: 1;
 	border: 2px solid #000;
 	height: 29.3vw;
 	width: 100%;
@@ -261,6 +275,12 @@ iframe{
 .gall{
 	color: #05487f;
 	height: 29.3vw;
+}
+.gall h3:hover:after{
+	content: " >";
+}
+.gall h3:hover:before{
+	content: "> ";
 }
 
 #slider, #slider .sliderInner {
@@ -294,6 +314,7 @@ iframe{
 }
 .sponsors{
 	position: relative;
+	z-index: -1;
 	width: 100%;
 	border: 2px solid #000;
 }
@@ -323,7 +344,7 @@ iframe{
 	text-align: center;		
 }
 .contact h2{
-	color: #05487f;
+	color: #fff;
 }
 .contact h3{
 	font-size: 5.3vw;
@@ -333,26 +354,125 @@ iframe{
 	font-size: 2.2vw;
 	color: #05487f;
 }
-
-.contact_wrap{
-	height: 400px;
-	border: 1px solid red;
+.part1{
+	width: 100%;
+	height: 44vw;
+	background: #05487f;
 }
-.contact_wrap div{
-	padding-left: 10px;
+.contact_wrap{
+	margin-top: 3vw;
+	width: 100%;
+	height: 24vw;
+}
+.contact_img{
+	height: 24vw;
+	width: 100%;
+	margin-left: 3.5vw;
+}
+.contact_wrap>div{
 	width: 25%;
-	border: 2px solid yellow;
+	height: 24vw;
 	float: left;
 }
+
 .contact_wrap img {
-	width: 300px;
-	height: 400px;
+	width: 17.5vw;
+	height: 24vw;
+}	
+
+
+
+
+
+.view-first img {
+   transition: all 0.2s linear;
+}
+.view-first .mask {
+   filter: alpha(opacity=0);
+   opacity: 0;
+   background-color:#fff;
+   transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+   transform: translateY(-7.8vw);
+   filter: alpha(opacity=0);
+   opacity: 0;
+   transition: all 0.2s ease-in-out;
+}
+.view-first p {
+   transform: translateY(7.8vw);
+   filter: alpha(opacity=0);
+   opacity: 0;
+   transition: all 0.2s linear;
+}
+.view-first:hover img {
+   transform: scale(1.2,1.2);
+}
+.view-first a.info {
+   filter: alpha(opacity=0);
+   opacity: 0;
+   transition: all 0.2s ease-in-out;
+}
+.view-first:hover .mask {
+   filter: alpha(opacity=100);
+   opacity: 0.7;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   transform: translateY(0px);
+}
+.view-first:hover p {
+   transition-delay: 0.1s;
+}
+.view-first:hover a.info {
+   transition-delay: 0.2s;
 }
 
 
 
+/*common */
+.view {
+   width: 17.5vw;
+   height: 24vw;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   box-shadow: 1px 1px 2px #e6e6e6;
+   cursor: default;
+}
+.view .mask{
+   width: 17.5vw;
+   height: 24vw;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
 
+.view h2 {
+	color: #fff;
+   text-transform: uppercase;
+   font-size: 3.4vw;
+   text-align: center;
+   position: relative;
+   background: rgba(0, 0, 0, 0.8);
+   margin: 10% 0 0 0;
+}
+.view p {
+   font-size: 1.2vw;
+   font-family: 'myraid';
+   position: relative;
+   text-align: center;
+   padding: 0.73vw 0.36px 0.73vw 0.36vw;
+}
 
+.info img{
+	width: 2.2vw;
+	height:2.2vw;
+}
 
 
 
@@ -449,4 +569,17 @@ form textarea {
 
 .cf:after {
   clear: both;
+}
+
+
+@media only screen and (min-width: 1366px){
+
+.about>p, .robo_des p{
+	font-size: 26px;
+}
+	
+
+
+
+
 }

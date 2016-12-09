@@ -12,6 +12,16 @@ document.getElementById("close-btn").addEventListener('click',function closeNav(
 	document.getElementById("main").style.backgroundColor="transparent";
 	document.getElementById("head-img").style.position ="static";
 }); */
+function closeNav(){
+	$("#navbar").css("width","0");
+	//$("#navbar").css("min-width","0");
+	$("#main").css("margin-left","0");
+	$("#main").css("background","");
+	$("#main").children().css("z-index","");
+	$("header").children().css("z-index","");
+}
+
+
 
 $("#open-btn").bind("click",function openNav(){
 	$("#navbar").css("width","15%");
@@ -24,14 +34,8 @@ $("#open-btn").bind("click",function openNav(){
 
 });
 
-$("#close-btn").bind("click",function closeNav(){
-	$("#navbar").css("width","0");
-	//$("#navbar").css("min-width","0");
-	$("#main").css("margin-left","0");
-	$("#main").css("background","");
-	$("#main").children().css("z-index","");
-	$("header").children().css("z-index","");
-
+$("#close-btn").bind("click",function(){
+	closeNav();
 });
 
 
@@ -72,8 +76,20 @@ $(".lib ul li a").bind("mouseout",function(){
 
 
 
+$("#navbar a").bind("click",function(event){
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 999);
+
+   setTimeout(closeNav, 999);
+});
 
 
+$(".item1>img").bind("click",function(){
+
+	$(".popin").show(500);
+});
 
 
 
