@@ -77,7 +77,6 @@ $(".lib ul li a").bind("mouseout",function(){
 
 
 $("#navbar a").bind("click",function(event){
-    event.preventDefault();
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 999);
@@ -86,11 +85,29 @@ $("#navbar a").bind("click",function(event){
 });
 
 
+$('.up').click(function(){
+    $('html, body').animate({
+        scrollTop: 0
+    }, 1500);
+});
+
+
 $(".item1>img").bind("click",function(){
 
 	$(".popin").show(500);
 });
 
+
+$(".up,.about").hide();
+$(window).scroll(function(){
+	if($(window).scrollTop()>100){
+		$(".up").slideDown(400);
+		$(".about").show(800);
+	}else{
+		$(".up").slideUp(400);
+	}
+
+});
 
 
 
