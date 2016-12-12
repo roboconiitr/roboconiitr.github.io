@@ -76,7 +76,7 @@
 	padding: 2% 0;
 }
 .imghead span{
-	font-size: 1.5em;
+	font-size: 1.25vw;
 	font-family: 'oswald';
 	color:white;
 	padding: 1% 8%;
@@ -165,7 +165,7 @@
 .qviewinfo{
 	background-color:#05487F;
 	color:white;
-	font-size: 1.4em;
+	font-size: 1.2vw;
 	font-family:'myraid';
 	position:relative;
 	padding:8% 3%;
