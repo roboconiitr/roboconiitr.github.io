@@ -1,0 +1,76 @@
+*{
+	margin: 0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+li a{
+	color: white;
+}
+body{
+	overflow-x: hidden;
+}
+.electronics{
+	position: absolute;
+	width: 100%;
+	transition:all 0.5s;
+}
+.machenical{
+	position: absolute;
+	width: 100%;
+	visibility: hidden;
+	transform: scale(0);
+	transition:all 0.5s;
+}
+.programming{
+	position: absolute;
+	width: 100%;
+	visibility: hidden;
+	transform: scale(0);
+	transition: all 0.5s;
+}
+#navbar{
+	width: 100%;
+	height: 4em;
+	background: tomato;
+}
+.container{
+}
+.qviewimgdiv img{
+		width: 100%;
+	height: auto;
+}
+.main-content{
+	display: flex;
+}
+.navigation{
+	flex: 1 0 20%;
+	background: #3C1672;
+	
+}
+.innernav{
+	position: fixed;
+	width:100%;
+	height: 100%; 
+}
+.images-stuff{
+	flex:4 0 80%;
+	padding-left: 1%;
+	padding-right: 2%;
+	background: #FBE87C;
+	padding-top: 4%;
+	display: flex;
+	flex-direction: column;
+	//position: relative;
+}
+
+.inner{
+	display: flex;
+	margin-bottom: 5%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+button{
+	z-index: 999;
+}

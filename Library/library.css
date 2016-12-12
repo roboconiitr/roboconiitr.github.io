@@ -1,0 +1,186 @@
+
+/* all the fonts*/
+@font-face {
+  font-family: 'myraid';
+  src: url('./fonts/MyriadPro-Regular.eot');
+  src: url('./fonts/MyriadPro-Regular.woff2') format('woff2'),
+       url('./fonts/MyriadPro-Regular.woff') format('woff'),
+       url('./fonts/MyriadPro-Regular.ttf') format('truetype'),
+       url('./fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg'),
+       url('./fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'oswald';
+  src: url('./fonts/Oswald-Regular.eot');
+  src: url('./fonts/Oswald-Regular.woff2') format('woff2'),
+       url('./fonts/Oswald-Regular.woff') format('woff'),
+       url('./fonts/Oswald-Regular.ttf') format('truetype'),
+       url('./fonts/Oswald-Regular.svg#Oswald-Regular') format('svg'),
+       url('./fonts/Oswald-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*the out of focus background  */
+/*.outfocus{
+	z-index:-1;
+	background-color: rgba(0,0,0,0.7);
+	height:100%;
+	width:100%;
+	position:fixed;
+	top:0;
+	left:0;
+    opacity:0;
+    transition: opacity 0.5 ease;
+}*/
+ 
+
+/* the main view of all library elements*/
+
+.container{
+	max-width: 25%;
+	height: auto;
+	min-width: 250px;
+}
+.element{
+	//width: 80%;
+	//height: auto;
+	padding: 1% ;
+	text-align:center;
+	//border:2px solid #7EA7C9;
+	border-radius: 2%;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.libimg{
+	width:100%;
+	height: auto;
+	transition:transform 0.5s ease,opacity 0.5s ease;
+	
+}
+.imgdiv:hover .libimg{
+	transform: scale(1.15,1.15);
+	//opacity: 0.7;
+	filter: brightness(0.8);
+}
+.imgdiv:hover .zoom{
+	z-index: 20;
+}
+.imghead{
+	
+	//border: 1px solid black;
+	margin:10% 0 6% 0; 
+	padding: 2% 0;
+}
+.imghead span{
+	font-size: 1.5em;
+	font-family: 'oswald';
+	color:white;
+	padding: 1% 8%;
+	background-color: #05487F;
+}
+.imgdiv{
+	font-family: 'oswald';
+	overflow: hidden;
+	position:relative;
+	cursor: pointer;
+}
+.zoom{
+	z-index:-1;
+	background-color: transparent;
+	border:none;
+	position: absolute;
+	top:45%;
+	left:47%;
+	transition: z-index 1s ease;
+	color:lightgrey;
+	cursor: pointer;		
+}
+
+/*all the quick view properties */
+.qview{
+	position:fixed;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;	
+	justify-content: center;
+	align-items: center;
+    z-index: 5;
+    transform:scale(2);
+    opacity: 0.4;
+    filter: brightness(0.6);
+    transition: filter,transform 0.5s;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+
+}
+
+.qviewele{
+	flex:1 0 0;
+	display:flex;
+	//margin:auto auto;
+	width:100%;
+	margin: 0 15% 0 15%;
+	opacity:1;
+	transition: opacity 1s ease;
+	border:0px solid transparent;
+	background-color: #05487F; 
+}
+
+/*IMAGES For different materials */
+.qviewimgdiv{
+    //background: #e0e1e3 url("./images/arduinodue.jpg") no-repeat ;
+	//background-size: contain;
+	margin:auto;
+	padding:2% 0.5%;
+	flex: 1 0 0;
+	text-align: center;
+}
+/*.qviewimgdiv2{
+    background: #e0e1e3 url("./images/rpi2.jpg") no-repeat ;
+	background-size: contain;
+	padding:4% 0;
+	flex: 1 0 0;
+	text-align: center;
+}
+.qviewimgdiv3{
+    background: #e0e1e3 url("./images/omniwheels.jpg") no-repeat ;
+	background-size: contain;
+	padding:4% 0;
+	flex: 1 0 0;
+	text-align: center;
+}*/
+
+
+
+
+.qviewimg{
+	width:100%;
+	height:auto;
+}
+.qviewinfo{
+	background-color:#05487F;
+	color:white;
+	font-size: 1.4em;
+	font-family:'myraid';
+	position:relative;
+	padding:8% 3%;
+	flex:1 0 0;
+}
+.qviewinfo h2{
+	font-family:'oswald';
+}
+#close-btn{
+	border:none;
+	background-color: transparent;
+	color:white;
+	position: absolute;
+	top:10px;
+	right:10px;
+	cursor: pointer;
+}
+
