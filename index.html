@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>TeamRoboconIITR</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>TeamRoboconIITR</title>
+		<link rel="icon" type="img/jpg" href="img/logo.jpg">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -26,14 +27,15 @@
 				<li><a href="img/construction.jpg">Blog</a></li>
 			</ul>
 		</nav>
-		<button type="button" id="open-btn"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
+		<div class="navspan"><span id="open-btn"><i class="fa fa-bars fa-2x" aria-hidden="true"></i><span class="menu">Menu</span></span>
+		</div>
 
 <!-- Here is main section -->		
 		<main id="main">
 			<header>
 				<section id="head">
-					<h1>Team Robocon IITR</h1>
-					<p>We create Difference..</p>
+					<h1>Team Robocon IITR</h1><hr>
+					<p><i class="fa fa-quote-left" aria-hidden="true"></i> None of us is as smart as all of us <i class="fa fa-quote-right" aria-hidden="true"></i></p>
 				</section>
 				<!--<section class="heading">
 					<h1>Team Robocon IITR</h1>
@@ -43,30 +45,27 @@
 <!-- this one is about -->
 			<div class="about" id="about">
 				<h2>About</h2>
-				<p>Robocon is the biggest international robotics competition in Asia-Pacific region. Major Asian countries like China, Japan, India, Pakistan and Vietnam participate in the contest to show their technological supermacy. The magnitude of the competition can be judged from the fact that only one team from a country is allowed to participate, with the host being allowed to field two teams. In the competition robots compete to complete a task within a set period of time. The contest aims to create friendship among young people with similar interests who will lead their countries in the 21st century, as well as help advance engineering and broadcasting technologies in the region. In India, it is telecasted by Doordarshan which is also one of its members. It might just be a competition for the organizers and other people,but for us,it is the platform for gaining technical skills.<br><br>Since the inception of our Team in 2008,we have worked on fusing the best possible technologies with the some of the most pragmatic and innovative ideas to come up with peerless robotic solutions to the yearly posed problem.Being pioneers of innovation and technology has been our precept and the passion for victory makes us strive for it.<br><br>Our first step matched our reputation of being at IIT and we became the "BEST DEBUT TEAM" performing really well in the national level of Robocon 2009 which further motivated us to carry on with our dream projects. Since then we never looked back and our hardwork and our vision to achieve something we carried on and we achieved 9th position in year 2011 among all 58 teams. All this seemed to be normal, until in the year 2014 our team performed extremely well, achieving the 5th position among 89 teams and winning the best aesthetics award. We grabbed the 5th place and best aesthetic award again in 2016.<br><br>This year, a unique problem statement is posed based on a theme of a Japanese game called Asobi(The flying disc).To complete the problem statement , balls placed across the arena need to be knocked out with the provided soft frisbees,thrown from an autonomous robot.Our team has been working assiduously on the current problem statement expecting a clear win this time.
+				<p>Robocon is the biggest international robotics competition in Asia-Pacific region. Major Asian countries like China, Japan, India, Pakistan and Vietnam participate in the contest to show their technological supermacy. The magnitude of the competition can be judged from the fact that only one team from a country is allowed to participate, with the host being allowed to field two teams. In the competition robots compete to complete a task within a set period of time. The contest aims to create friendship among young people with similar interests who will lead their countries in the 21st century, as well as help advance engineering and broadcasting technologies in the region. In India, it is telecasted by Doordarshan which is also one of its members. It might just be a competition for the organizers and other people,but for us,it is the platform for gaining technical skills.
 				</p>
 				<div class="testimonials">
-					<div class="item1">
-						<img src="img/testimonials/abhisheknegi.png">
+					<div class="item" id="testi1">
 						<h4>Abhishek Negi</h4>
-						<p>Software Engineer, <br>Samsung R&D <br>Bangalore, India</p>
 						<div class="popin">
-							<p><i class="fa fa-times fa-2x" aria-hidden="true"></i>ROBOCON has been one of the most momentous journey of my life. I was recruited in the team in 2011-12 session and in my 3 years with Team ROBOCON IITR, I have unquestionably expanded my knowledge and limits to a whole new level. The team is like a family of passionate undergraduate engineers working together throughout the year and round the clock to achieve one goal. The technical aspects involve all the basics to the most complex concepts of electronics, electrical and mechanical engineering. The range of challenges and emotions one experiences is stupendous. The exposure that I got by representing my college at national level was a brilliant opportunity. Some of the everlasting friendships that I have with so many talented people is in itself a testimony. Best of luck to TEAM ROBOCON IITR in all its future endeavors.</p>
+							<p class="testi_text">
+							<i class="fa fa-quote-left" aria-hidden="true"></i>ROBOCON has been one of the most momentous journey of my life. I was recruited in the team in 2011-12 session and in my 3 years with Team ROBOCON IITR, I have unquestionably expanded my knowledge and limits to a whole new level. The team is like a family of passionate undergraduate engineers working together throughout the year and round the clock to achieve one goal. The technical aspects involve all the basics to the most complex concepts of electronics, electrical and mechanical engineering. The range of challenges and emotions one experiences is stupendous. The exposure that I got by representing my college at national level was a brilliant opportunity. Some of the everlasting friendships that I have with so many talented people is in itself a testimony. Best of luck to TEAM ROBOCON IITR in all its future endeavors.<i class="fa fa-quote-right" aria-hidden="true"></i></p>
 						</div>
+						<p>Software Engineer, <br>Samsung R&amp;D <br>Bangalore, India</p>
 					</div>
-					<div class="item2">
-						<img src="img/testimonials/anantsharma.jpg">
+					<div class="item" id="testi2">
 						<h4>Anant Sharma</h4>
 						<p>Finisar, Malaysia</p>
 					</div>
-					<div class="item3">
-						<img src="img/testimonials/pulkitgupta.jpg">
+					<div class="item" id="testi3">
 						<h4>Pulkit Gupta</h4>
 						<p>MS, University of <br> Michigan</p>
 					</div>
 				</div>
 			</div>
-			<div class="triangle"></div>
 <!-- this is robocon 17-->	
 			<div class="robocon17" id="robocon17">
 				<h2>Robocon 2017</h2>
@@ -74,8 +73,10 @@
 					<h3>CONTEST THEME: Asobi - The Landing Disc</h3>
 					<p>The theme revolves around the word "asobi" (play), which is also a fundamental philosophy behind Robocon. In "asobi," playful, unique, original show of skills is often more important than winning or losing, as everyone - friend and foe alike - can applaud and enjoy them.</p>
 					<span><a href="#">Explore Robocon</a></span>
+					<span><a href="#">Robocon 2017</a></span>
 				</div>
 				<div class="video">
+					<span class="close_video"><i class="fa fa-times fa-2x" aria-hidden="true"></i></span>
 					<iframe src="http://www.youtube.com/embed/3Xvxbw_YCvQ" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
@@ -94,13 +95,13 @@
 				</div>
 				<div class="gall">
 					<h3>Way to Gallery</h3>
-        				<div id="slider">
+        				<!--<div id="slider">
            					<img src="img/slider/item1.jpg" >
 	            			<img src="img/slider/item2.jpg" >
 	            			<img src="img/slider/item3.jpg" >
 	            			<img src="img/slider/item4.jpg" >
 	            			<img src="img/slider/item5.jpg" >
-				        </div>
+				        </div>-->
 				</div>
 			</div>
 <!--Sponsors Section starts here -->
@@ -121,7 +122,53 @@
 			</div>
 <!-- Contact the last section -->
 			<div class="contact" id="contact">
-				<section class="part1">
+				<h2>Contact</h2>
+				<h5>We'd love to hear from you if you'd like to join our team or discuss partnerships.</h5>
+				<div class="contact_l">
+					<form class="cf" method="post">
+						 <div class="half left cf">
+						  	<input type="text" id="input-name" placeholder="Name">
+						    <input type="email" id="input-email" placeholder="Email address">
+						    <input type="text" id="input-subject" placeholder="Subject">
+						</div>
+						<div class="half right cf">
+						    <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+						</div>
+							<input type="submit" value="Submit" id="input-submit">
+						</form>
+				</div>
+				<div class="contact_r">
+					<h5>Stay in touch</h5>
+					<h3>Jashan Singh</h3>
+					<p>Team Leader, Robocon IIT Roorkee</p>
+					<p class="ph_em">Ph. no: +91 9911114212 <br>Email: jashanps25@gmail.com</p>
+				</div>
+
+				<footer>
+					<div class="foot">
+						<a href="https://www.facebook.com/roboconiitr" target="_blank"><img src="img/fb.png"></a>
+						<p>Copyright &copy; TeamRobocon IITR 2016</p>
+					</div>
+				</footer>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+		</main>
+<!--javascripts-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
+<!--<section class="part1">
 					<h2>Contact</h2>
 					<h3>Stay in Touch</h3>
 					<div class="contact_wrap">
@@ -178,36 +225,4 @@
 							</div>						
 						</div>
 					</div>
-				</section>
-				<section class="part2">
-					<h5>We'd love to hear from you if you'd like to join our team or discuss partnerships.</h5>
-					<form class="cf">
-					  <div class="half left cf">
-					    <input type="text" id="input-name" placeholder="Name">
-					    <input type="email" id="input-email" placeholder="Email address">
-					    <input type="text" id="input-subject" placeholder="Subject">
-					  </div>
-					  <div class="half right cf">
-					    <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
-					  </div>  
-					  <input type="submit" value="Submit" id="input-submit">
-					</form>
-				</section>
-			</div>
-
-
-
-
-
-
-
-
-
-
-
-		</main>
-<!--javascripts-->
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-	</body>
-</html>
+				</section>-->
