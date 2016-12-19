@@ -150,7 +150,7 @@ button,#open-btn{
 	left: 11vw;
 	background: transparent;
 	bottom: 9.4vw;
-	color: #fff;
+	color: #2b2b2b;
 	transition: all 0.3s;
 }
 #close-btn:hover{
@@ -160,7 +160,7 @@ button,#open-btn{
 #navbar{
 	position: fixed;
 	z-index: 99;
-	background: #2b2b2b;
+	background: #fff;
 	width: 0;	
 	height: 99999999999px;
 	padding-top: 10%;
@@ -177,7 +177,7 @@ ul li{
 }
 #navbar a{
 	text-decoration: none;
-	color: #fff;
+	color: #2b2b2b;
 	font-size: 1.75vw;
 	font-family: 'myraid';
 }
