@@ -336,13 +336,9 @@ iframe{
 /*this is library and gallary*/
 
 .lib_gal{
-	background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/gallery.jpg") no-repeat;
-	background-size: 100% 100%;
-	background-attachment: fixed;
-	background-position: 0px 0px;
 	position: relative;
 	z-index: 1;
-	//border: 2px solid #000;
+	border: 2px solid #000;
 	height: 500px;
 	width: 100%;
 	text-align: center;
@@ -352,18 +348,21 @@ iframe{
 	float: left;
 }
 .lib{
-	background: transparent;
-	width: 40%;
+	background: #2b2b2b;
+	width: 30%;
 	color: #fff;
 	height: 500px;
 }
 .gall{
-	//background: #ec8d81;
-	width: 60%;
+	background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/gallery.jpg") no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	background-position: 150px 0px;
+	width: 70%;
 	color: #2b2b2b;
 	height: 500px;
 }
-.lib_gal h3{
+.gall h3{
 	font-size: 40px;
 	color: #fff;
 }
@@ -374,35 +373,33 @@ iframe{
 .gall h3:hover:before{
 	content: "> ";
 }
-*/
 
 #slider, #slider .sliderInner {
     width:48vw;height:23vw;
 }
 
 #slider {
-	margin-left: 100px;
-	margin-top: 50px;
+	margin-left: 0.8vw;
     background-color:white;
     position:relative;
     transform: translate3d(0,0,0);
+    box-shadow: 0px 1px 5px #999999;
     overflow: hidden;
 }
-
+*/
 .lib ul{
-	padding-top: 70px;
+	margin-top: 3vw;
 }
 .lib ul li{
-	padding: 20px;
+	padding: 5px;
 }
 .lib_gal a{
 	text-decoration: none;
 	color: #fff;
-	font-size:26px;
+	font-size:1.8vw;
 	font-family: 'myraid';
 }
 .lib ul img{
-	padding: 10px;
 	width: 14.7vw;
 	height: 11vw;
 }
@@ -411,7 +408,7 @@ iframe{
 	z-index: -1;
 	height: 700px;
 	width: 100%;
-	//border: 2px solid #000;
+	border: 2px solid #000;
 }
 .sponsors h2{
 	padding: 60px;
@@ -464,10 +461,9 @@ iframe{
 	color: #fff;
 }
 .contact_l{
-	background: rgba(0,0,0,0.6);
 	margin-left: 40px;
 	float: left;
-	//border: 2px #fff solid;
+	border: 2px #fff solid;
 	width: 40%;
 	height: 500px;
 }
@@ -676,8 +672,8 @@ form input, form textarea {
   resize: none;
 }
 form input:focus, form textarea:focus {
-  -moz-box-shadow: 0 0px 10px green !important;
-  -webkit-box-shadow: 0 0px 10px green!important;
+  -moz-box-shadow: 0 0px 2px #05487f !important;
+  -webkit-box-shadow: 0 0px 2px #05487f !important;
   box-shadow: 0 0px 10px green !important;
 }
 form #input-submit {
