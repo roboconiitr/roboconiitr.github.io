@@ -54,9 +54,9 @@ main{
 /*header section*/
 header{
 	background:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("../img/header_img.jpg") no-repeat;
-	background-size: 100% 650px;
+	background-size: 100% 45.92vw;
 	background-attachment: fixed;
-	height: 600px;
+	height: 45.98vw;
 	position: relative;
 	width: 100%;
 	transition: background-image 0.3s ease;
@@ -74,7 +74,7 @@ header{
 #head p{
 	position: relative;
 	z-index: 1;
-	top:-250px;
+	top:-19.15vw;
 	color: #fff;
 	font-size: 25px;
 	text-align: center;
@@ -83,31 +83,32 @@ header{
 }
 #head i{
 	font-size: 20px;
-	padding: 10px;
+	padding: 0.77vw;
 }
 /*Only h1*/
 h1{
-	line-height: 600px;
+	line-height: 45.98vw;
 	vertical-align: middle;
 	font-size: 5.2vw;
 	text-align: center;
 	font-family:'myraid';
-	letter-spacing: 5px;
+	letter-spacing: 0.383vw;
 	color: #fff;
 }
 .up{
 	position: fixed;
 	z-index: 9999;
-	opacity: 0.7;
+	opacity: 0.3;
 	color: #fff;
 	background: #2b2b2b;
-	padding: 0 5px;
-	right: 10px;
-	bottom: 10px;
+	padding: 0.383vw;
+	right: 0.77vw;
+	bottom: 0.77vw;
 	transition: opacity 0.3s;
+	border-radius: 0.766vw;
 }
 .up:hover{
-	opacity: 1;
+	opacity: 0.7;
 }
 
 /*invoke navbar button*/
@@ -115,7 +116,7 @@ h1{
 	position: relative;
 	z-index: 25;
 	width: 100%;
-	height: 60px;
+	height: 4.6vw;
 	position: fixed;
 	z-index: 99;
 	background: transparent;
@@ -127,10 +128,10 @@ h1{
 	letter-spacing: 3px;
 	font-weight: 600;
 	font-family: 'myraid';
-	padding: 5px 0px 0px 10px;
+	padding: 0.383vw 0px 0px 0.77vw;
 }
 button,#open-btn{
-	padding: 10px;
+	padding: 0.77vw;
 	color: #fff;
 	border: none;
 	transition: 0.3s;
@@ -140,8 +141,8 @@ button,#open-btn{
 	//box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
 }
 #open-btn i{
-	padding:10px;
-	padding-top: 15px;
+	padding:0.77vw;
+	padding-top: 1.15vw;
 }
 
 /*close navbar button*/
@@ -153,16 +154,13 @@ button,#open-btn{
 	color: #2b2b2b;
 	transition: all 0.3s;
 }
-#close-btn:hover{
-	border-radius: 10px;
-}
 /*side slide navbar*/
 #navbar{
 	position: fixed;
 	z-index: 99;
 	background: #fff;
 	width: 0;	
-	height: 99999999999px;
+	height: 99999999px;
 	padding-top: 10%;
 	overflow-x: hidden;
 	transition: all .5s;
@@ -209,13 +207,13 @@ h2{
 }
 .about h2{
 	text-align:left;;
-	padding: 40px 85px;
+	padding: 3.06vw 6.5vw;
 	font-weight: 500;
-	font-size: 40px;
+	font-size: 42px;
 	color: #000;
 }
 .about>p{
-	padding: 40px 85px 100px 85px;
+	padding: 3.06vw 6.5vw 7.66vw 6.5vw;
 	font-size: 20px;
 	line-height: 1.6;
 	color: #2b2b2b;
@@ -224,12 +222,12 @@ h2{
 }
 /*testimonial part of about*/
 .testimonials{
-	height: 400px;
+	height: 30.95vw;
 }
 .item{
 	width: 100%;
-	height: 400px;
-	font-size: 24px;
+	height: 30.95vw;
+	font-size: 1.84vw;
 	font-family: 'myraid';
 	color: #fff;
 	background:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url("../img/testimonials/abhisheknegi.jpg") no-repeat;
@@ -238,15 +236,15 @@ h2{
 	filter: grayscale(40%);
 }
 .item h4{
-	font-size: 40px;
-	padding: 30px;
+	font-size: 3.06vw;
+	padding: 2.3vw;
 	width: 30%;
 	float: left;
 }
 .item>p{
 	position: relative;
-	top: -260px;
-	padding: 30px;
+	top: -19.92vw;
+	padding: 2.29vw;
 	width: 30%;
 }
 #testi2,#testi3{
@@ -255,33 +253,33 @@ h2{
 
 /*pop up on hover over testimonials*/
 .popin{
-	margin-top: 30px;
-	padding: 30px;
+	margin-top: 2.29vw;
+	padding: 2.29vw;
 	float: left;
 	width: 70%;
 	font-family: 'Aref Ruqaa', serif;
-	font-size: 20px;
+	font-size: 1.53vw;
 
 }
 .popin i{
-	padding: 10px 10px 0px 10px;
+	padding: 0.77vw 0.77vw 0px 0.77vw;
 }
 /*robocon 17 starts*/
 .robocon17{
 	position: relative;
 	z-index: 1;
 	width: 100%;
-	height: 600px;
+	height: 45.98vw;
 	color: #000;
 	text-align: center;
 }
 .robocon17 h2{
-	padding:60px;
+	padding:4.6vw;
 	letter-spacing: 3px;	
 }
 .robocon17 div{
 	width: 100%;	
-	height: 400px;
+	height: 30.65vw;
 }
 h3{
 	margin-top: 2.2vw;
@@ -293,11 +291,11 @@ h3{
 	color: #2b2b2b;
 	margin-top:5.2vw;
 	margin-bottom: 3.7vw;
-	padding: 80px 100px 100px 100px ;
+	padding: 6.13vw 7.66vw 7.66vw 7.66vw;
 	width: 80%;
 	margin:auto;
 	line-height: 1.6;
-	font-size: 20px;
+	font-size: 1.53vw;
 	text-align: left;
 	font-family: 'myraid';
 }
@@ -336,34 +334,34 @@ iframe{
 /*this is library and gallary*/
 
 .lib_gal{
-	position: relative;
-	z-index: 1;
-	border: 2px solid #000;
-	height: 500px;
-	width: 100%;
-	text-align: center;
-}
-.lib_gal div{
-	height: 500px;
-	float: left;
-}
-.lib{
-	background: #2b2b2b;
-	width: 30%;
-	color: #fff;
-	height: 500px;
-}
-.gall{
 	background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/gallery.jpg") no-repeat;
 	background-size: 100% 100%;
 	background-attachment: fixed;
-	background-position: 150px 0px;
-	width: 70%;
+	position: relative;
+	z-index: 1;
+	//border: 2px solid #000;
+	height: 38.31vw;
+	width: 100%;
+	text-align: center;
+	overflow-y: hidden;
+}
+.lib_gal div{
+	padding: 30px;
+	height: 38.31vw;
+	float: left;
+}
+.lib{
+	width: 40%;
+	color: #fff;
+	height: 38.31vw;
+}
+.gall{
+	width: 60%;
 	color: #2b2b2b;
-	height: 500px;
+	height: 38.31vw;
 }
 .gall h3{
-	font-size: 40px;
+	font-size: 3.06vw;
 	color: #fff;
 }
 /*
@@ -391,7 +389,7 @@ iframe{
 	margin-top: 3vw;
 }
 .lib ul li{
-	padding: 5px;
+	padding: 1.91vw;
 }
 .lib_gal a{
 	text-decoration: none;
@@ -400,18 +398,19 @@ iframe{
 	font-family: 'myraid';
 }
 .lib ul img{
+	padding: 1.15vw 1.15vw 0 1.15vw;
 	width: 14.7vw;
 	height: 11vw;
 }
 .sponsors{
 	position: relative;
 	z-index: -1;
-	height: 700px;
+	height: 53.63vw;
 	width: 100%;
-	border: 2px solid #000;
+	//border: 2px solid #000;
 }
 .sponsors h2{
-	padding: 60px;
+	padding: 4.6vw;
 	font-family: 'myraid';
 	font-weight: 600;
 	letter-spacing: 2px;
@@ -419,35 +418,35 @@ iframe{
 }
 .sponsors div{
 	width: 25%;
-	padding: 20px 40px 60px 40px;
-	height:150px;
+	padding: 1.53vw 3.065vw 4.6vw 3.065vw;
+	height: 11.5vw;
 	float: left;
 	text-align: center;
 }
 .sponsors section{
-	height: 220px;
+	height: 16.85vw;
 }
 .sponsors img{
 	width: 70%;
-	height:150px;
+	height:11.5vw;
 
 }
 /*last part - contact*/
 .contact{
-	border: 2px solid #000;
+	//border: 2px solid #000;
 	position: relative;
 	width: 100%;
 	text-align: center;	
-	background:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("../img/header_img.jpg") no-repeat;
+	background:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url("../img/header_img.jpg") no-repeat;
 	background-size:100% 100%; 
 	background-position: 0px 0px;
 	background-attachment: fixed;
-	height: 1180px;	
+	height: 90.42vw;
 }
 .contact h2{
-	letter-spacing: 3px;
+	letter-spacing: 0.23vw;
 	font-family: 'myraid';
-	padding: 50px 60px 20px 60px;
+	padding: 3.831vw 4.6vw 1.53vw 4.6vw;
 	color: #fff;
 }
 .contact h3{
@@ -455,36 +454,36 @@ iframe{
 	text-decoration: none;
 }
 .contact h5{
-	padding: 40px;
+	padding: 3.065vw;
 	font-family:'myraid';
 	font-size: 2.2vw;
 	color: #fff;
 }
 .contact_l{
-	margin-left: 40px;
+	margin-left: 3.065vw;
 	float: left;
-	border: 2px #fff solid;
+	border: 0.153vw #fff solid;
 	width: 40%;
-	height: 500px;
+	height: 38.31vw;
 }
 .contact_r{
 	float: right;
-	margin-right: 30px;
+	margin-right: 2.3vw;
 	position: relative;
 	width: 50%;
-	height: 500px;
+	height: 38.31vw;
 	color: #fff;
 	text-align: center;
 	background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)), url(../img/mapiitr.png);
 	background-position: 0px 0px;
-	padding: 40px;
+	padding: 3.065vw;
 }
 .contact_r p{
-	font-size: 24px;
+	font-size: 1.84vw;
 	font-family: 'myraid';
 }
 .ph_em{
-	padding: 30px;
+	padding: 2.3vw;
 	text-align: left;
 	position: absolute;
 	left: 0;
@@ -493,9 +492,9 @@ iframe{
 footer{
 	clear: both;
 	width: 100%;
-	height: 250px;
+	height: 18vw;
 	background:rgba(0,0,0,0.7);
-	margin-top: 700px;
+	margin-top: 53.64vw;
 }
 .foot{
 	position: relative;
@@ -503,15 +502,15 @@ footer{
 	font-family: 'myraid';
 	font-size: 24px;
 	width: 100%;
-	height: 200px;
+	height: 15.32vw;
 	margin: auto;
 }
 .foot img{
-	margin-top: 70px;
+	margin-top: 5.36vw;
 }
 .foot p{
- 	padding: 20px;
- 	letter-spacing: 2px;
+ 	padding: 1.53vw;
+ 	letter-spacing: 0.153vw;
 }
 /*
 .contact_wrap{
@@ -652,10 +651,10 @@ footer{
 }
 
 form {
-  padding: 60px 30px 30px 30px;
-  max-width: 600px;
+  padding: 4.6vw 2.3vw 2.3vw 2.3vw;
+  max-width: 45.8vw;
   text-align: center;
-  margin: 20px auto;
+  margin: 1.53vw auto;
 }
 form input, form textarea {
   background: transparent;
@@ -674,7 +673,7 @@ form input, form textarea {
 form input:focus, form textarea:focus {
   -moz-box-shadow: 0 0px 2px #05487f !important;
   -webkit-box-shadow: 0 0px 2px #05487f !important;
-  box-shadow: 0 0px 10px green !important;
+  box-shadow: 0 0px 0.766vw green !important;
 }
 form #input-submit {
   color: #fff;
@@ -687,7 +686,7 @@ form #input-submit:hover {
   box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
 }
 form textarea {
-  height: 126px;
+  height: 9.655vw;
 }
 
 .half {
