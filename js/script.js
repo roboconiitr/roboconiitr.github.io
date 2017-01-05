@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+var $body = $("body");
+var $preloader = $(".preloader");
 var $navbar = $("#navbar");
 var $main = $("#main");
 var $navspan = $(".navspan");
@@ -12,6 +14,7 @@ var $liblink = $(".lib a");
 var $navbarlink = $("#navbar a");
 var $up = $(".up");
 var $gall = $(".gall");
+var $loader = $(".loader");
 
 	function closeNav(){
 		$navbar.css("width","0");
@@ -92,8 +95,33 @@ $(window).scroll(function(){
 	}
 });
 
+$body.css("overflow","hidden");
+$(".loader").animate({bottom:"-200px"},4000);
 
+function offPreloader(){
+	$preloader.slideUp(400,function(){
+		$body.css("overflow","auto");
+});
+}
+setTimeout(offPreloader,2000);
 
+$(window).scroll(function(){
+	if($(window).scrollTop()>600){
+		$(".testimonials").fadeIn(800);
+	}
+	if($(window).scrollTop()>1000){
+		$(".robocon17").fadeIn(800);
+	}
+	if($(window).scrollTop()>1550){
+		$(".lib_gal").fadeIn(800);
+	}
+	if($(window).scrollTop()>2200){
+		$(".sponsors").fadeIn(800);
+	}
+	if($(window).scrollTop()>2800){
+		$(".contact").animate({opacity: "1"},800);
+	}
+});
 /*setInterval(function(){
 	$("header").css("background-image","url(./img/header_img2.jpg)");
 },3000);*/
