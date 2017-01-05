@@ -60,6 +60,7 @@ var $loader = $(".loader");
 
 
 $navbarlink.bind("click",function(event){
+	displayAll();
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 999);
@@ -122,6 +123,12 @@ $(window).scroll(function(){
 		$(".contact").animate({opacity: "1"},800);
 	}
 });
+
+function displayAll(){
+	$(".testimonials,.robocon17,.lib_gal,.sponsors").fadeIn(800);
+	$(".contact").animate({opacity: "1"},800);
+}
+
 /*setInterval(function(){
 	$("header").css("background-image","url(./img/header_img2.jpg)");
 },3000);*/
