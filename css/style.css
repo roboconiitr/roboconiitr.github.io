@@ -279,10 +279,6 @@ h2{
 	padding:4.6vw;
 	letter-spacing: 3px;	
 }
-.robocon17 div{
-	width: 100%;	
-	height: 30.65vw;
-}
 h3{
 	margin-top: 2.2vw;
 	font-family: 'myraid';
@@ -312,20 +308,27 @@ h3{
 	font-size: 1.9vw;
 }
 .video{
-	background: #333;
-	width: 400px;
-	height: 400px;
+	transform: scale(0);
+	background:rgba(0,0,0,0.7);
+	width: 100%;
+	height: 100%;
+	padding: 12%;
 	border: 2px solid #000;
 	position: fixed;
-	z-index: 50;
-	top: 25%;	
+	z-index: 9999;
+	top: 0;	
 	left: 0;
-	display: none;
+	transition: transform 0.5s ease;
+}
+.video>iframe{
+	padding: 20px;
+	border: 2px solid #eee;
 }
 .close_video{
 	position: fixed;
-	top: 20%;
-	right: 20%;
+	top: 18%;
+	right: 27%;
+	color: #fff;
 }
 iframe{
 	position: relative;
@@ -341,7 +344,7 @@ iframe{
 	background-size: 100% 100%;
 	background-attachment: fixed;
 	position: relative;
-	z-index: 1;
+	z-index: -1;
 	//border: 2px solid #000;
 	height: 38.31vw;
 	width: 100%;

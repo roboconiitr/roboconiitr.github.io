@@ -129,6 +129,16 @@ function displayAll(){
 	$(".contact").animate({opacity: "1"},800);
 }
 
+
+$(".open_video").click(function(e){
+	e.preventDefault();
+	$(".video").css("transform","scale(1)");
+});
+$(".close_video").click(function(e){
+	e.preventDefault();
+	$(".video").css("transform","scale(0)");
+});
+
 /*setInterval(function(){
 	$("header").css("background-image","url(./img/header_img2.jpg)");
 },3000);*/
