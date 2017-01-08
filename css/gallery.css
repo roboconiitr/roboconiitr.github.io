@@ -1,0 +1,282 @@
+*{
+	margin:0;
+	padding:0;
+	overflow-x: hidden;
+}
+nav{
+
+}
+.npage{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	position: absolute;
+}
+.inner{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin:2vw 0;
+   padding: 0 2%;
+}
+.gal10{
+	transform: translateX(100%);
+	position: absolute;
+	visibility: hidden;
+	//height: 500px;
+	//width: 500px;	
+	background: rgba(20,20,20,1);
+   //background: black;
+	transition: 0.5s;
+	width: 100%;	
+   height: 100%;
+}
+.fullimage{
+	position: fixed;
+	//background: black;
+	//opacity: 1;
+   background: rgba(0,0,0,0.9);
+	width: 100%;
+	height: 100%;
+	display:none;
+	//justify-content: center;
+   //align-items: center;
+}
+.fullimage div{
+	//vertical-align: middle;
+	//position: relative;
+   display: flex;
+   opacity: 1;
+   //text-align: center;
+   width: 100%;
+   height: 100%;
+   justify-content: center;
+   align-items: center;
+}
+
+.fullimage span{
+   position: absolute;
+
+}
+#prev{
+   color: white;
+   top: 49%;
+}
+#next{
+   top: 49%;
+   right: 0;
+   color:white;
+}
+#close{
+   color:white;
+   right: 0;
+   top:0;
+}
+
+.fullimage div img{
+   max-width: 80%;
+   height: auto;
+   max-height: 98vh;
+}
+/*Image hover effect of the navigation page*/
+.view-first img {
+   transition: all 0.2s linear;
+}
+.view-first .mask {
+   filter: alpha(opacity=0);
+   opacity: 0;
+   background-color: rgba(255,255,255, 0.95);
+   transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+   transform: translateY(-7.8vw);
+   filter: alpha(opacity=0);
+   opacity: 0;
+   transition: all 0.2s ease-in-out;
+}
+.view-first p {
+   transform: translateY(7.8vw);
+   filter: alpha(opacity=0);
+   opacity: 0;
+   transition: all 0.2s linear;
+}
+.view-first:hover img {
+   transform: scale(1.2,1.2);
+}
+.view-first a.info {
+   filter: alpha(opacity=0);
+   opacity: 0;
+   transition: all 0.2s ease-in-out;
+}
+.view-first:hover .mask {
+   filter: alpha(opacity=100);
+   opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+   filter: alpha(opacity=100);
+   opacity: 1;
+   transform: translateY(0px);
+}
+.view-first:hover p {
+   transition-delay: 0.1s;
+}
+.view-first:hover a.info {
+   transition-delay: 0.2s;
+}
+
+
+
+/*common */
+.view {
+   width: 20vw;
+  // height: auto;
+  height: 20vw;
+   margin: 10px;
+   border: 10px solid #fff;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   box-shadow: 2px 2px 2px 2px #e6e6e6;
+   cursor: default;
+  //min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.view .mask{
+   width: 20vw;
+   height: 20vw;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+  	//min-width: 200px;
+  	//min-height: 200px
+}
+.view img {
+   display: block;
+   position: relative;
+   width:100%;
+   height: auto;
+}
+.view h2 {
+   text-transform: uppercase;
+   color: #fff;
+   text-align: center;
+   position: relative;
+   font-size: 1.3vw;
+   padding: 3%;
+   background: #797979;
+   margin: 10% 0 5% 0;
+}
+.view p {
+   font-family: Georgia, serif;
+   font-size: 1vw;
+   position: relative;
+   color: black;
+   padding: 10px 20px 20px;
+   text-align: center;
+}
+.view a.info {
+   display: inline-block;
+   text-decoration: none;
+   padding: 2% 4%;
+   background: #797979;
+   color: #fff;
+   text-transform: uppercase;
+   box-shadow: 0 0 1px #000;
+   cursor: pointer;
+   font-size: 1.5vw;
+}
+.view a.info:hover {
+   box-shadow: 0 0 5px #000;
+   transform: scale(1.05);
+}
+.contain{
+	max-width: 25%;
+	min-width: 350px;
+	height: auto;
+}
+
+/* images for the gallery */
+.container
+{	
+	overflow-y: hidden;
+	width: 22vw;
+	height: 16vw;
+	position: relative;
+}
+.icon{
+	height: 3vw;
+	visibility: hidden;
+	width: auto;
+	position: absolute;
+	left: 9.8vw;
+	transition: 0.8s;
+	cursor: pointer;
+	color: #fff;
+}
+.back{
+	position: absolute;
+	width: 23vw;
+	height: 17vw;
+	transition: all 0.8s;
+	cursor: pointer;
+}
+.mask2{
+	position: absolute;
+	opacity: 0.4;
+	width: 23vw;
+	height: 17vw;
+	transition: transform 0.8s;
+	z-index: 2;
+}
+.container:hover .mask2{
+	background: white;
+	transform: scale(0,0);
+}
+.container:hover .back{
+	filter: brightness(0.6);
+	transform: scale(1.05);
+}
+.container:hover .icon{
+	visibility: visible;
+	z-index: 5;
+	transform: translateY(6.5vw);
+}
+
+
+
+.imagepage{
+	padding-top: 2vw;
+}
+
+.navpagehead{
+   text-align: center;
+   padding: 2% 0 0 0;
+   font-family: 'Roboto', sans-serif;
+   letter-spacing: 3px;
+   font-size: 40px;
+   font-weight: 700;
+   color: #545454;
+}
+.galpagehead{
+   text-transform: uppercase;
+   text-align: center;
+   padding: 2% 0 0 0;
+   font-family: 'Roboto', sans-serif;
+   letter-spacing: 3.5px;
+   font-size: 40px;
+   font-weight: 700;
+   color: white;
+}
+
+#closebtn{
+   cursor: pointer;
+   //position: fixed;
+   float:right;
+   color: white;
+}
