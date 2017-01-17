@@ -348,12 +348,12 @@ h3{
 }
 .video>iframe{
 	padding: 20px;
-	border: 2px solid #eee;
 }
 .close_video{
 	position: fixed;
-	top: 18%;
-	right: 27%;
+	z-index: 9999;
+	top: 70px;
+	right: 15px;
 	color: #fff;
 }
 iframe{
@@ -408,7 +408,6 @@ iframe{
 	height: 370px;
 	background: transparent;
 	overflow:hidden;
-	border: 2px solid #eee;
 }
 .slides>ul>li{
 	float: left;
@@ -551,11 +550,11 @@ iframe{
 	position: relative;
 	width: 100%;
 	text-align: center;	
-	background:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url("../img/header_img.jpg") no-repeat;
+	background:url("../img/mapiitr.jpg") no-repeat;
 	background-size:100% 100%; 
 	background-position: 0px 0px;
 	background-attachment: fixed;
-	height: 90.42vw;
+	height: 82vw;
 	transition: visibility 0.8s ease;
 }
 .contact h2{
@@ -577,7 +576,7 @@ iframe{
 .contact_l{
 	margin-left: 3.065vw;
 	float: left;
-	border: 0.153vw #fff solid;
+	//border: 0.153vw #fff solid;
 	width: 40%;
 	height: 38.31vw;
 }
@@ -589,7 +588,8 @@ iframe{
 	height: 38.31vw;
 	color: #fff;
 	text-align: center;
-	background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)), url(../img/mapiitr.png);
+	opacity: 0.9;
+	//background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)), url(../img/mapiitr.png);
 	background-position: 0px 0px;
 	padding: 3.065vw;
 }
@@ -609,7 +609,7 @@ footer{
 	width: 100%;
 	height: 18vw;
 	background:rgba(0,0,0,0.7);
-	margin-top: 53.64vw;
+	margin-top: 45vw;
 }
 .foot{
 	position: relative;
