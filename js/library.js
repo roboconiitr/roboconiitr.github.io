@@ -102,5 +102,6 @@ function showhidenav(){
 ids=location.hash.slice(1);
 console.log(ids);
 document.getElementsByClassName(ids)[0].style.visibility="visible";
+document.getElementsByClassName(ids)[0].style.transform="scale(1)";
 
 

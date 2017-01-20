@@ -45,6 +45,7 @@ body{
 	background-color: #eee;
 	position: absolute;
 	visibility: hidden;
+	transform: scale(0);
 	width: 100%;
 	transition:all 0.5s;
 	padding: 2% 0;
@@ -55,7 +56,7 @@ body{
 	background-color: #eee;
 	width: 100%;
 	visibility: hidden;
-	//transform: scale(0);
+	transform: scale(0);
 	transition:all 0.5s;
 	min-height: 100vh;
 }
@@ -65,7 +66,7 @@ body{
 	background-color: #eee;
 	width: 100%;
 	visibility: hidden;
-	//transform: scale(0);
+	transform: scale(0);
 	transition: all 0.5s;
 	min-height: 100vh;
 }
@@ -310,7 +311,7 @@ button{
 	//background-size: contain;
 	flex:1 1 35%;
 	margin:auto;
-	padding:2% 1.5%;
+	padding:2% 0.5%;
 	flex: 1 0 0;
 	text-align: center;
 	min-width: 250px;
@@ -318,7 +319,7 @@ button{
 	height: auto;
 }
 .qviewimgdiv img{
-	width: 20vw;
+	width: 25vw;
 	height: auto;
 }
 /*.qviewimgdiv2{
