@@ -5,7 +5,7 @@
 .nav{
 	padding: 0.5%;
 	display: block;
-	background:#3B414D;
+	background:#E5E5E5;
 	font-family: 'Source Sans Pro', sans-serif;
 	overflow: visible;	
 	position: fixed;
@@ -20,16 +20,16 @@ ul{
 }
 li{
 	display: inline;
-	color: white;
-	font-size: 1.25vw;
+	color: black;
+	font-size: 20px;
 	padding: 0.25vw;
 	cursor: pointer;
 }
 li a {
-	color: white;
+	color: black;
     display: block;
-   //padding: 0.5vw;
-    font-size: 1.25vw;
+    //padding: 0.5vw;
+    font-size: 20px;
 }
 
 a{
@@ -40,28 +40,32 @@ body{
 	//overflow-x: hidden;
 }
 .electronics{
-	background: url("./background.jpg") no-repeat fixed center;
-	background: rgba(36, 41, 67, 0.9);
+	//background: url("./background.jpg") no-repeat fixed center;
+	//background: rgba(36, 41, 67, 0.9);
+	background-color: #eee;
 	position: absolute;
+	visibility: hidden;
 	width: 100%;
 	transition:all 0.5s;
 	padding: 2% 0;
 }
 .machenical{
 	position: absolute;
-	background: rgba(36, 41, 67, 0.9);
+	//background: rgba(36, 41, 67, 0.9);
+	background-color: #eee;
 	width: 100%;
 	visibility: hidden;
-	transform: scale(0);
+	//transform: scale(0);
 	transition:all 0.5s;
 	min-height: 100vh;
 }
 .programming{
 	position: absolute;
-	background: rgba(36, 41, 67, 0.9);
+	//background: rgba(36, 41, 67, 0.9);
+	background-color: #eee;
 	width: 100%;
 	visibility: hidden;
-	transform: scale(0);
+	//transform: scale(0);
 	transition: all 0.5s;
 	min-height: 100vh;
 }
@@ -71,7 +75,7 @@ body{
 	background: tomato;
 }
 .qviewimgdiv img{
-		width: 100%;
+	width: 100%;
 	height: auto;
 }
 .main-content{
@@ -142,6 +146,24 @@ button{
 	color: white;
 	cursor: pointer;
 }
+.libheadimg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40vh;
+	width: 100%;
+	background: url("../img/libback.jpg") no-repeat fixed center;
+	background-attachment: fixed;
+	//background: rgba(21, 41, 67, 0);
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 30px;
+	letter-spacing: 1.5px;
+}
+.libheadimgmech{
+	
+}
+
 
 /* all the fonts*/
 @font-face {
@@ -197,7 +219,8 @@ button{
 	text-align:center;
 	//border:2px solid #7EA7C9;
 	border-radius: 2%;
-	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background: #ccc;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .libimg{
@@ -222,9 +245,10 @@ button{
 	padding: 2% 0;
 }
 .imghead span{
-	font-size: 1.25vw;
+	font-size: 20px;
+	letter-spacing: 1.5px;
 	font-family: 'oswald';
-	color:white;
+	color:#444;
 	padding: 1% 8%;
 	//background-color: #05487F;
 }
@@ -260,13 +284,13 @@ button{
     opacity: 0.4;
     filter: brightness(0.6);
     transition: filter,transform 0.3s;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.9);
     display: none;
 
 }
 
 .qviewele{
-	flex:1 0 0;
+	//flex:1 0 0;
 	display:flex;
 	//margin:auto auto;
 	width:100%;
@@ -284,12 +308,17 @@ button{
 .qviewimgdiv{
     //background: #e0e1e3 url("./images/arduinodue.jpg") no-repeat ;
 	//background-size: contain;
+	flex:1 1 35%;
 	margin:auto;
 	padding:2% 1.5%;
 	flex: 1 0 0;
 	text-align: center;
-	min-width: 200px;
-	width: 27vw;
+	min-width: 250px;
+	//width: 10vw;
+	height: auto;
+}
+.qviewimgdiv img{
+	width: 20vw;
 	height: auto;
 }
 /*.qviewimgdiv2{
@@ -310,20 +339,21 @@ button{
 
 
 
-.qviewimg{
+/*.qviewimg{
 	width:100%;
 	//width: 27vw;
 	height:auto;
-}
+}*/
 .qviewinfo{
+	flex:3 3 60%;
 	background-color:#444;
 	color:white;
-	font-size: 1.1vw;
+	font-size: 18px;
 	font-family:'myraid';
 	position:relative;
 	padding:8% 3%;
-	line-height: 1.5vw;
-	letter-spacing: 0.02vw;
+	line-height: 26px;
+	letter-spacing: 0.9px;
 	flex:1 0 0;
 	min-width: 300px;
 }
@@ -340,5 +370,4 @@ button{
 	right:10px;
 	cursor: pointer;
 }
-
 

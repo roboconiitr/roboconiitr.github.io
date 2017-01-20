@@ -1,11 +1,14 @@
 function showrobocon(n){
-	var a=document.getElementsByClassName('npage')[0];
+	var a=document.getElementsByClassName('navpage')[0];
 	$(".Robocon"+n+"").slideToggle(500);
-	console.log(a.style.display);
-	if(a.style.display=='flex'|| a.style.display==''){
-		$(".npage").css("display","none");
+	console.log(a.style.display); 
+	setTimeout(function(){
+	if(a.style.maxHeight=='none'|| a.style.maxHeight==''){
+		$(".navpage").css("max-height","100vh");
+
 	}
 	else{
-		$(".npage").css("display","flex");
+		$(".navpage").css("max-height","none");
 	}
+},600);
 }

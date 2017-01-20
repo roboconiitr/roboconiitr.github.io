@@ -10,7 +10,16 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-		<div class="npage">
+		<div class="nav">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="./index.html">TIMELINE</a></li>
+					<li><a href="library.html#electronics">LIBRARY</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+				</ul>
+			</div>
+		<!--<div class="npage">
 
 		<h1 class="navpagehead">ROBOCON</h1>
 		
@@ -18,7 +27,7 @@
 
 			<div class="contain">
 				<div class="view view-first">
-                    <img src="img/robocon/10.jpg" />
+                    <img src="./10.jpg" />
                     <div class="mask">
                         <h2>ROBOCON 2010</h2>
                         <p>Robocon's debut year in which teamroboconiitr made the first impression on each one of the teams all around the world.</p>
@@ -29,7 +38,7 @@
 
             <div class="contain">
 				<div class="view view-first">
-                    <img src="img/robocon/11.jpg" />
+                    <img src="./11.jpg" />
                     <div class="mask">
                         <h2>ROBOCON 2011</h2>
                         <p>Robocon's debut year in which teamroboconiitr made the first impression on each one of the teams all around the world.</p>
@@ -41,7 +50,7 @@
 
             <div class="contain">
 				<div class="view view-first">
-                    <img src="img/robocon/12.png" />
+                    <img src="./12.png" />
                     <div class="mask">
                         <h2>ROBOCON 2012</h2>
                         <p>Robocon's debut year in which teamroboconiitr made the first impression on each one of the teams all around the world.</p>
@@ -55,7 +64,7 @@
 
 			<div class="contain">
 				<div class="view view-first">
-                    <img src="img/robocon/13.jpg" />
+                    <img src="./13.jpg" />
                     <div class="mask">
                         <h2>ROBOCON 2013</h2>
                         <p>Robocon's debut year in which teamroboconiitr made the first impression on each one of the teams all around the world.</p>
@@ -66,7 +75,7 @@
 
             <div class="contain">
 				<div class="view view-first">
-                    <img src="img/robocon/14.png" />
+                    <img src="./14.png" />
                     <div class="mask">
                         <h2>ROBOCON 2014</h2>
                         <p>Robocon's debut year in which teamroboconiitr made the first impression on each one of the teams all around the world.</p>
@@ -78,7 +87,7 @@
 
             <div class="contain">
 				<div class="view view-first">
-                    <img src="img/robocon/15.jpg" />
+                    <img src="./15.jpg" />
                     <div class="mask">
                         <h2>ROBOCON 2015</h2>
                         <p>Robocon's debut year in which teamroboconiitr made the first impression on each one of the teams all around the world.</p>
@@ -92,7 +101,7 @@
 		<div class="inner">
 			<div class="contain">
 				<div class="view view-first">
-                    <img src="img/robocon/16.jpg" />
+                    <img src="./16.jpg" />
                     <div class="mask">
                         <h2>ROBOCON 2016</h2>
                         <p>Robocon's debut year in which teamroboconiitr made the first impression on each one of the teams all around the world.</p>
@@ -102,7 +111,7 @@
             </div>
             <div class="contain">
 				<div class="view view-first">
-                    <img src="img/robocon/17.png" />
+                    <img src="./17.png" />
                     <div class="mask">
                         <h2>ROBOCON 2017</h2>
                         <p>Robocon's debut year in which teamroboconiitr made the first impression on each one of the teams all around the world.</p>
@@ -111,8 +120,60 @@
                 </div>
             </div>
 		</div>
-	</div>
+	</div>-->
+	<div class="navpage">
+		<h1 class="navpagehead">ROBOCON HISTORY</h1>
+		<div class="innernavpart">
+			<div class="navbox" onclick="showrobocon(6)">
+				<div>
+					<h2>2016</h2>
+					<p>Bangkok</p>
+				</div>	
+			</div>
+			<div class="navbox" onclick="showrobocon(5)">
+				<div>
+					<h2>2015</h2>
+					<p>Tokyo</p>
+				</div>	
+			</div>
+			<div class="navbox" onclick="showrobocon(4)">
+				<div>
+					<h2>2014</h2>
+					<p>Tokyo</p>
+				</div>	
+			</div>
+		</div>
 
+		<div class="innernavpart">
+			<div class="navbox" onclick="showrobocon(3)">
+				<div>
+					<h2>2013</h2>
+					<p>Tokyo</p>
+				</div>	
+			</div>
+			<div class="navbox" onclick="showrobocon(2)">
+				<div>
+					<h2>2012</h2>
+					<p>Tokyo</p>
+				</div>	
+			</div>
+			<div class="navbox" onclick="showrobocon(1)">
+				<div>
+					<h2>2011</h2>
+					<p>Tokyo</p>
+				</div>	
+			</div>
+		</div>
+
+		<div class="innernavpart">
+			<div class="navbox" onclick="showrobocon(0)">
+				<div>
+					<h2>2010</h2>
+					<p>Tokyo</p>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="Robocon Robocon0">
 		<span onclick="showrobocon(0)" id="closebtn"><i class="fa fa-times fa-2x" aria-hidden="true"></i></span>
 		<h1>Robocon 2010</h1>
@@ -124,7 +185,7 @@
 			</div>
 			<iframe src="https://www.youtube.com/embed/QsrQWioWUY0" height="300px" width="420px" allowfullscreen frameborder="0"></iframe>
 		</div>
-		<h2 class="teamhead">The TEAM</h2>
+		<h4 class="teamhead">The TEAM</h4>
 		<div class="team">
 			<div class="teampart">
 				<h3>Mechanical</h3>
@@ -179,7 +240,7 @@
 			</div>
 			<iframe src="https://www.youtube.com/embed/AfSZ6JbHbF0" height="300px" width="420px" allowfullscreen frameborder="0"></iframe>
 		</div>
-		<h2>The TEAM</h2>
+		<h4 class="teamhead">The TEAM</h4>
 		<div class="team">
 			<div class="teampart">
 				<h3>Mechanical</h3>
@@ -232,7 +293,7 @@
 			</div>
 			<iframe src="https://www.youtube.com/embed/2IWMBwSwToc" height="300px" width="420px" allowfullscreen frameborder="0"></iframe>
 		</div>
-		<h2>The TEAM</h2>
+		<h4 class="teamhead">The TEAM</h4>
 		<div class="team">
 			<div class="teampart">
 				<h3>Mechanical</h3>
@@ -285,7 +346,7 @@
 			</div>
 			<iframe src="https://www.youtube.com/embed/qbjooQaMTFA" height="300px" width="420px" allowfullscreen frameborder="0"></iframe>
 		</div>
-		<h2>The TEAM</h2>
+		<h4 class="teamhead">The TEAM</h4>
 		<div class="team">
 			<div class="teampart">
 				<h3>Mechanical</h3>
@@ -331,7 +392,7 @@ Two teams play various game activities in the park with their Parent robot and C
 			</div>
 			<iframe src="https://www.youtube.com/embed/GchwbtfqDzc" height="300px" width="420px" allowfullscreen frameborder="0"></iframe>
 		</div>
-		<h2>The TEAM</h2>
+		<h4 class="teamhead">The TEAM</h4>
 		<div class="team">
 			<div class="teampart">
 				<h3>Mechanical</h3>
@@ -382,7 +443,7 @@ The motive of this contest theme is badminton's doubles game. The highlight of t
 			</div>
 			<iframe src="https://www.youtube.com/embed/0nd0paMVnvc" height="300px" width="420px" allowfullscreen frameborder="0"></iframe>
 		</div>
-		<h2>The TEAM</h2>
+		<h4 class="teamhead">The TEAM</h4>
 		<div class="team">
 			<div class="teampart">
 				<h3>Mechanical</h3>
@@ -438,7 +499,7 @@ The game of ABU Robocon 2016 is designed in order to create the awareness of eff
 			</div>
 			<iframe src="https://www.youtube.com/embed/t3Ma9yKFsjY" height="300px" width="420px" allowfullscreen frameborder="0"></iframe>
 		</div>
-		<h2>The TEAM</h2>
+		<h4 class="teamhead">The TEAM</h4>
 		<div class="team">
 			<div class="teampart">
 				<h3>Mechanical</h3>
@@ -500,7 +561,7 @@ The theme revolves around the word &quotasobi&quot (play), which is also a funda
 			</div>
 			<iframe src="https://www.youtube.com/embed/3Xvxbw_YCvQ" height="300px" width="420px" allowfullscreen frameborder="0"></iframe>
 		</div>
-		<h2>The TEAM</h2>
+		<h4 class="teamhead">The TEAM</h4>
 		<div class="team">
 			<div class="teampart">
 				<h3>Mechanical</h3>

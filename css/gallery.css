@@ -3,9 +3,6 @@
 	padding:0;
 	overflow-x: hidden;
 }
-nav{
-
-}
 .npage{
 	width: 100%;
 	display: flex;
@@ -26,7 +23,7 @@ nav{
 	visibility: hidden;
 	//height: 500px;
 	//width: 500px;	
-	background: rgba(20,20,20,1);
+	background: rgba(0,0,0,0.8);
    //background: black;
 	transition: 0.5s;
 	width: 100%;	
@@ -70,8 +67,8 @@ nav{
 }
 #close{
    color:white;
-   right: 0;
-   top:0;
+   right: 10px;
+   top:10px;
 }
 
 .fullimage div img{
@@ -133,7 +130,7 @@ nav{
 .view {
    width: 20vw;
   // height: auto;
-  height: 20vw;
+  height: 18vw;
    margin: 10px;
    border: 10px solid #fff;
    overflow: hidden;
@@ -141,20 +138,24 @@ nav{
    text-align: center;
    box-shadow: 2px 2px 2px 2px #e6e6e6;
    cursor: default;
-  //min-width: 200px;
+  min-width: 300px;
+  min-height: 270px;
   display: flex;
   justify-content: center;
   align-items: center;
+  //background-color: #eee;
 }
 .view .mask{
    width: 20vw;
-   height: 20vw;
+   height: 18vw;
    position: absolute;
    overflow: hidden;
    top: 0;
    left: 0;
   	//min-width: 200px;
-  	//min-height: 200px
+  	//min-height: 200px;
+   min-width: 300px;
+  min-height: 270px;
 }
 .view img {
    display: block;
@@ -167,14 +168,17 @@ nav{
    color: #fff;
    text-align: center;
    position: relative;
-   font-size: 1.3vw;
+   //font-size: 1.3vw;
+   font-size: 22px;
+   font-family: 'Roboto', sans-serif;
    padding: 3%;
-   background: #797979;
+   background: #555;
    margin: 10% 0 5% 0;
 }
 .view p {
    font-family: Georgia, serif;
-   font-size: 1vw;
+   font-size: 1.1vw;
+   font-size: 17px;
    position: relative;
    color: black;
    padding: 10px 20px 20px;
@@ -183,20 +187,24 @@ nav{
 .view a.info {
    display: inline-block;
    text-decoration: none;
+   margin-top: 20px;
    padding: 2% 4%;
-   background: #797979;
+   background: #555;
    color: #fff;
-   text-transform: uppercase;
+   font-family: 'Roboto', sans-serif;
+   //font-size: 24px;
+   //text-transform: uppercase;
    box-shadow: 0 0 1px #000;
    cursor: pointer;
-   font-size: 1.5vw;
+   //font-size: 1.5vw;
+   font-size: 22px;
 }
 .view a.info:hover {
    box-shadow: 0 0 5px #000;
    transform: scale(1.05);
 }
 .contain{
-	max-width: 25%;
+	max-width: 30%;
 	min-width: 350px;
 	height: auto;
 }
@@ -205,9 +213,16 @@ nav{
 .container
 {	
 	overflow-y: hidden;
-	width: 22vw;
-	height: 16vw;
+	width: 23vw;
+	height: 17vw;
+   min-width: 300px;
+   min-height: 300px;
 	position: relative;
+}
+.container img{
+   width: 100%;
+   height: auto;
+   min-height:100%;
 }
 .icon{
 	height: 3vw;
@@ -255,13 +270,14 @@ nav{
 }
 
 .navpagehead{
-   text-align: center;
-   padding: 2% 0 0 0;
    font-family: 'Roboto', sans-serif;
    letter-spacing: 3px;
    font-size: 40px;
    font-weight: 700;
-   color: #545454;
+   color: #ccc;
+   text-align: center;
+   padding: 2% 0;
+   margin-top: 30px;
 }
 .galpagehead{
    text-transform: uppercase;
@@ -273,10 +289,105 @@ nav{
    font-weight: 700;
    color: white;
 }
-
+.navpagehead::first-letter{
+   font-size: 50px;
+}
 #closebtn{
    cursor: pointer;
    //position: fixed;
+   padding: 10px 10px 0 0;
    float:right;
    color: white;
+}
+
+.galhead{
+   height: 40vh;
+   background: url("background.jpg");
+   background-attachment: fixed;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+/* New Nav Page */
+.navpage{
+   background-attachment: fixed;
+   background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("../img/galleryback.jpg");
+   background-position:center ;
+   min-height: 100vh;
+   position: absolute;
+   width: 100%;
+}
+.innernavpart{
+   display: flex;
+   justify-content: space-around;
+   margin: 3% 0;
+   width: 100%;
+   flex-wrap: wrap;
+}
+.navbox{
+   flex :0 1 15%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   height: 200px;
+   color: #aaa;
+   background: rgba(0,0,0,0.8);
+   font-family: 'Roboto', sans-serif;
+   cursor: pointer;
+   min-width: 300px;
+   transition: 0.2s;
+   //perspective: 500px; 
+   //transform: rotateX(-25deg);
+   //transform-origin: 100px 0 0;
+}
+.navbox:hover{
+   //transform: rotateX(0deg);
+   //perspective: 500px; 
+   color: #fff;
+}
+.navbox h2{
+   font-size: 40px;
+   letter-spacing: 1px;
+   padding: 6px;
+}
+.navbox p{
+   font-size: 22px;
+}
+.nav{
+  padding: 0.5%;
+  display: block;
+  background:rgba(0,0,0,0.4);
+  font-family: 'Source Sans Pro', sans-serif;
+  overflow: visible;  
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  transition: 0.5s;
+}
+.nav ul{
+  display: flex;
+  justify-content: space-around;
+  //overflow: visible;  
+
+}
+.nav li{
+  display: inline;
+  color: #fff;
+  font-size: 20px;
+  padding: 0.25vw;
+  cursor: pointer;
+}
+.nav li a {
+  color: #fff;
+    display: block;
+    //padding: 0.5vw;
+    font-size: 20px;
+}
+
+a{
+  text-decoration: none;
 }

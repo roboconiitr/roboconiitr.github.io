@@ -1,17 +1,21 @@
 function showme(n){
+	document.getElementsByClassName('nav')[0].style.visibility="hidden";
 	var x=document.getElementsByClassName("gal10")[n];
 	x.style.visibility="visible";
 	x.style.transform="translateX(0)";
-	var y=document.getElementsByClassName("npage")[0];
-	setTimeout(function(){y.style.display="none";},500);
+	document.getElementsByClassName('navpage')[0].style.maxHeight="100vh";
+	//var y=document.getElementsByClassName("npage")[0];
+	//setTimeout(function(){y.style.display="none";},500);
 
 }
 
 function closeme(n){
+	document.getElementsByClassName('nav')[0].style.visibility="visible";
 	var x=document.getElementsByClassName("gal10")[n];
-	var y=document.getElementsByClassName("npage")[0];
+	document.getElementsByClassName('navpage')[0].style.maxHeight="none";
+	//var y=document.getElementsByClassName("npage")[0];
 	x.style.transform="translateX(100%)";
-	y.style.display="block";
+	//y.style.display="block";
 	x.style.visibility="hidden";
 }
 

@@ -99,5 +99,8 @@ function showhidenav(){
 	document.getElementsByClassName("libnav")[0].style.visibility="hidden";
 	//document.getElementsByClassName("libnav")[0].style.z-index="1000";
 }*/
+ids=location.hash.slice(1);
+console.log(ids);
+document.getElementsByClassName(ids)[0].style.visibility="visible";
 
 
