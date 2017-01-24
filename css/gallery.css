@@ -4,6 +4,81 @@
 	overflow-x: hidden;
 }
 
+/* Navigaiton Page for gallery */
+.navpage{
+   background-attachment: fixed;
+   background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("../img/galleryback.jpg");
+   background-position:center ;
+   min-height: 100vh;
+   position: absolute;
+   width: 100%;
+}
+.innernavpart{
+   display: flex;
+   justify-content: space-around;
+   margin: 3% 0;
+   width: 100%;
+   flex-wrap: wrap;
+}
+.navbox{
+   flex :0 1 15%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   height: 200px;
+   color: #aaa;
+   background: rgba(0,0,0,0.8);
+   font-family: 'Roboto', sans-serif;
+   cursor: pointer;
+   min-width: 300px;
+   transition: 0.2s;
+}
+.navbox:hover{
+   color: #fff;
+}
+.navbox h2{
+   font-size: 40px;
+   letter-spacing: 1px;
+   padding: 6px;
+}
+.navbox p{
+   font-size: 22px;
+}
+
+/*Navigation Bar*/
+.nav{
+  padding: 0.5%;
+  display: block;
+  background:rgba(0,0,0,0.4);
+  font-family: 'Source Sans Pro', sans-serif;
+  overflow: visible;  
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  transition: 0.5s;
+}
+.nav ul{
+  display: flex;
+  justify-content: space-around;
+}
+.nav li{
+  display: inline;
+  color: #fff;
+  font-size: 20px;
+  padding: 0.25vw;
+  cursor: pointer;
+}
+.nav li a {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+}
+
+a{
+  text-decoration: none;
+}
+
 .inner{
 	display: flex;
 	justify-content: space-around;
@@ -11,6 +86,7 @@
 	margin:2vw 0;
    padding: 0 2%;
 }
+/*Gallery page yearwise*/
 .gallery{
 	transform: translateX(100%);
 	position: absolute;
@@ -20,6 +96,8 @@
 	width: 100%;	
   height: 100%;
 }
+
+/*full image div properties*/
 .fullimage{
 	position: fixed;
   background: rgba(0,0,0,0.9);
@@ -120,7 +198,7 @@
 .imagepage{
 	padding-top: 2vw;
 }
-
+/*Page headings*/
 .navpagehead{
    font-family: 'Roboto', sans-serif;
    letter-spacing: 3px;
@@ -162,77 +240,4 @@
 }
 
 
-/* New Nav Page */
-.navpage{
-   background-attachment: fixed;
-   background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("../img/galleryback.jpg");
-   background-position:center ;
-   min-height: 100vh;
-   position: absolute;
-   width: 100%;
-}
-.innernavpart{
-   display: flex;
-   justify-content: space-around;
-   margin: 3% 0;
-   width: 100%;
-   flex-wrap: wrap;
-}
-.navbox{
-   flex :0 1 15%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   height: 200px;
-   color: #aaa;
-   background: rgba(0,0,0,0.8);
-   font-family: 'Roboto', sans-serif;
-   cursor: pointer;
-   min-width: 300px;
-   transition: 0.2s;
-}
-.navbox:hover{
-   color: #fff;
-}
-.navbox h2{
-   font-size: 40px;
-   letter-spacing: 1px;
-   padding: 6px;
-}
-.navbox p{
-   font-size: 22px;
-}
 
-/*Navigation Bar*/
-.nav{
-  padding: 0.5%;
-  display: block;
-  background:rgba(0,0,0,0.4);
-  font-family: 'Source Sans Pro', sans-serif;
-  overflow: visible;  
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  transition: 0.5s;
-}
-.nav ul{
-  display: flex;
-  justify-content: space-around;
-}
-.nav li{
-  display: inline;
-  color: #fff;
-  font-size: 20px;
-  padding: 0.25vw;
-  cursor: pointer;
-}
-.nav li a {
-    color: #fff;
-    display: block;
-    font-size: 20px;
-}
-
-a{
-  text-decoration: none;
-}

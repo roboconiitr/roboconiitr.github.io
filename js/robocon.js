@@ -1,3 +1,4 @@
+/*function to show each year robocon page*/
 function showrobocon(n){
 	var a=document.getElementsByClassName('navpage')[0];
 	$(".Robocon"+n+"").slideToggle(500);
