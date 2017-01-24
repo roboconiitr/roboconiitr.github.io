@@ -1,3 +1,4 @@
+/*Js function to show gallery pages on click*/
 function showme(n){
 	document.getElementsByClassName('nav')[0].style.visibility="hidden";
 	var x=document.getElementsByClassName("gallery")[n];
@@ -6,6 +7,7 @@ function showme(n){
 	document.getElementsByClassName('navpage')[0].style.maxHeight="100vh";
 }
 
+/*Function to close the opened gallery page on closebutton click*/
 function closeme(n){
 	document.getElementsByClassName('nav')[0].style.visibility="visible";
 	var x=document.getElementsByClassName("gallery")[n];
@@ -14,16 +16,18 @@ function closeme(n){
 	x.style.visibility="hidden";
 }
 
+/*show the full image on click in the gallery page*/
 function maximage(ele){
 	var a=document.getElementsByClassName("viewimage")[0];
 	a.src=ele.src;
 	$(".fullimage").slideToggle(300,function(){});
 }
-
+/*Close the opened full image on close button click*/
 function closefs(){
 	$(".fullimage").slideToggle(300,function(){});
 }
 
+/*viewing previous image*/
 function preimg(a){
 	var a=document.getElementsByClassName("viewimage")[0];	
 	var b=document.getElementsByClassName('back');
@@ -43,7 +47,7 @@ function preimg(a){
 		}
 	} 
 }
-
+/*view nxt image on forward click*/
 function nxtimg(a){
 	var a=document.getElementsByClassName("viewimage")[0];	
 	var b=document.getElementsByClassName('back');

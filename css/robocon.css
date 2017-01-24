@@ -3,163 +3,90 @@
   padding:0;
   overflow-x: hidden;
 }
-/*Image hover effect of the navigation page*/
-.view-first img {
-   transition: all 0.2s linear;
-}
-.view-first .mask {
-   filter: alpha(opacity=0);
-   opacity: 0;
-   background-color: rgba(255,255,255, 0.95);
-   transition: all 0.4s ease-in-out;
-}
-.view-first h2 {
-   transform: translateY(-7.8vw);
-   filter: alpha(opacity=0);
-   opacity: 0;
-   transition: all 0.2s ease-in-out;
-}
-.view-first p {
-   transform: translateY(7.8vw);
-   filter: alpha(opacity=0);
-   opacity: 0;
-   transition: all 0.2s linear;
-}
-.view-first:hover img {
-   transform: scale(1.2,1.2);
-}
-.view-first a.info {
-   filter: alpha(opacity=0);
-   opacity: 0;
-   transition: all 0.2s ease-in-out;
-}
-.view-first:hover .mask {
-   filter: alpha(opacity=100);
-   opacity: 1;
-}
-.view-first:hover h2,
-.view-first:hover p,
-.view-first:hover a.info {
-   filter: alpha(opacity=100);
-   opacity: 1;
-   transform: translateY(0px);
-}
-.view-first:hover p {
-   transition-delay: 0.1s;
-}
-.view-first:hover a.info {
-   transition-delay: 0.2s;
-}
 
-
-
-/*common */
-.view {
-   width: 20vw;
-  // height: auto;
-  height: 18vw;
-   margin: 10px;
-   border: 10px solid #fff;
-   overflow: hidden;
-   position: relative;
-   text-align: center;
-   box-shadow: 2px 2px 2px 2px #e6e6e6;
-   cursor: default;
-  min-width: 300px;
-  min-height: 270px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  //background-color: #eee;
-}
-.view .mask{
-   width: 20vw;
-   height: 18vw;
+/*navigaiton page for robocon*/
+.navpage{
+   background-attachment: fixed;
+   background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/roboback.jpg");
+   background-position:center;
+   min-height: 100vh;
    position: absolute;
-   overflow: hidden;
-   top: 0;
-   left: 0;
-    //min-width: 200px;
-    //min-height: 200px;
-   min-width: 300px;
-  min-height: 270px;
+   width: 100%;
 }
-.view img {
-   display: block;
-   position: relative;
-   width:100%;
-   height: auto;
+.innernavpart{
+   display: flex;
+   justify-content: space-around;
+   margin: 3% 0;
+   width: 100%;
+   flex-wrap: wrap;
 }
-.view h2 {
-   text-transform: uppercase;
-   color: #fff;
+.navbox{
+   flex :0 1 15%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    text-align: center;
-   position: relative;
-   //font-size: 1.3vw;
-   font-size: 22px;
+   height: 200px;
+   color: #aaa;
+   background: rgba(0,0,0,0.8);
    font-family: 'Roboto', sans-serif;
-   padding: 3%;
-   background: #555;
-   margin: 10% 0 5% 0;
-}
-.view p {
-   font-family: Georgia, serif;
-   font-size: 1.1vw;
-   font-size: 17px;
-   position: relative;
-   color: black;
-   padding: 10px 20px 20px;
-   text-align: center;
-}
-.view a.info {
-   display: inline-block;
-   text-decoration: none;
-   margin-top: 20px;
-   padding: 2% 4%;
-   background: #555;
-   color: #fff;
-   font-family: 'Roboto', sans-serif;
-   //font-size: 24px;
-   //text-transform: uppercase;
-   box-shadow: 0 0 1px #000;
    cursor: pointer;
-   //font-size: 1.5vw;
+   min-width: 300px;
+   transition: 0.2s;
+}
+.navbox:hover{
+   color: #fff;
+}
+.navbox h2{
+   font-size: 32px;
+   letter-spacing: 1px;
+   padding: 6px;
+}
+.navbox p{
    font-size: 22px;
-}
-.view a.info:hover {
-   box-shadow: 0 0 5px #000;
-   transform: scale(1.05);
-}
-.contain{
-  max-width: 30%;
-  min-width: 350px;
-  height: auto;
-}
-
-.npage{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  position: absolute;
-}
-.inner{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  //margin:1vw 0;
-   padding: 2%;
 }
 .navpagehead{
-   text-align: center;
-   padding: 2% 0 0 0;
    font-family: 'Roboto', sans-serif;
    letter-spacing: 3px;
    font-size: 40px;
    font-weight: 700;
-   color: #545454;
+   color: #bbb;
+   text-align: center;
+   padding: 4% 0 2% 0;
+}
+.nav{
+  padding: 0.5%;
+  display: block;
+  background:rgba(0,0,0,0.6);
+  font-family: 'Source Sans Pro', sans-serif;
+  overflow: visible;  
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.nav ul{
+  display: flex;
+  justify-content: space-around;
+}
+.nav li{
+  display: inline;
+  color: #fff;
+  font-size: 20px;
+  padding: 0.25vw;
+  cursor: pointer;
+}
+.nav li a {
+  color: #fff;
+  display: block;
+  font-size: 20px;
 }
 
+a{
+  text-decoration: none;
+}
+
+
+/*Robocon pages yearwise*/
 .Robocon{
   width: 100%;
   height: 100%;
@@ -176,6 +103,7 @@
    padding: 20px;
    z-index: 1000;
 }
+/*project details*/
 .pro-det{
   display: flex;
   flex-wrap: wrap;
@@ -187,8 +115,6 @@
 }
 .pro-det div{
   flex:3 3 50%;
-  //display: flex;
-  //align-items: center;
   padding: 0 2%;
   min-width: 400px;
 }
@@ -200,9 +126,9 @@
   font-family: font-family: 'Catamaran', sans-serif;
   line-height: 30px;
   letter-spacing: 1.5px;
-  //text-align: center;
   padding-left:10%; 
 }
+/*Robocon Team*/
 .team{
   display: flex;
   padding-left: 15%;
@@ -242,7 +168,6 @@
   line-height: 33px;
   letter-spacing: 1.3px;
   padding-left: 35px; 
-  //text-align: center;
 }
 .teampart h3{
   font-family: 'Roboto', sans-serif;
@@ -262,92 +187,4 @@
   font-family: 'Roboto', sans-serif;
   color: rgb(220,220,220);
   font-size: 33px;
-}
-/* New Nav Page */
-.navpage{
-   background-attachment: fixed;
-   background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/roboback.jpg");
-   background-position:center ;
-   min-height: 100vh;
-   position: absolute;
-   width: 100%;
-}
-.innernavpart{
-   display: flex;
-   justify-content: space-around;
-   margin: 3% 0;
-   width: 100%;
-   flex-wrap: wrap;
-}
-.navbox{
-   flex :0 1 15%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   height: 200px;
-   color: #aaa;
-   background: rgba(0,0,0,0.8);
-   font-family: 'Roboto', sans-serif;
-   cursor: pointer;
-   min-width: 300px;
-   transition: 0.2s;
-   //perspective: 500px; 
-   //transform: rotateX(-25deg);
-   //transform-origin: 100px 0 0;
-}
-.navbox:hover{
-   //transform: rotateX(0deg);
-   //perspective: 500px; 
-   color: #fff;
-}
-.navbox h2{
-   font-size: 32px;
-   letter-spacing: 1px;
-   padding: 6px;
-}
-.navbox p{
-   font-size: 22px;
-}
-.navpagehead{
-   font-family: 'Roboto', sans-serif;
-   letter-spacing: 3px;
-   font-size: 40px;
-   font-weight: 700;
-   color: #bbb;
-   text-align: center;
-   padding: 4% 0 2% 0;
-}
-.nav{
-  padding: 0.5%;
-  display: block;
-  background:rgba(0,0,0,0.6);
-  font-family: 'Source Sans Pro', sans-serif;
-  overflow: visible;  
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
-.nav ul{
-  display: flex;
-  justify-content: space-around;
-  //overflow: visible;  
-
-}
-.nav li{
-  display: inline;
-  color: #fff;
-  font-size: 20px;
-  padding: 0.25vw;
-  cursor: pointer;
-}
-.nav li a {
-  color: #fff;
-    display: block;
-    //padding: 0.5vw;
-    font-size: 20px;
-}
-
-a{
-  text-decoration: none;
 }
