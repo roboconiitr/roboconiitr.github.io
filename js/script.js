@@ -13,6 +13,7 @@ var $openbtn = $("#open-btn");
 var $fabars = $(".fa-bars");
 var $liblink = $(".lib a");
 var $navbarlink = $("#navbar a");
+var $logo = $(".logo");
 var $up = $(".up");
 var $gall = $(".gall");
 var $loader = $(".loader");
@@ -78,6 +79,7 @@ var interval;
 	$(window).scroll(function(){
 		if($(window).scrollTop()>510){
 			$navspan.css("background-color","rgba(0, 0, 0, 0.8)");
+			$logo.fadeOut(400);
 			$up.slideDown(400);
 		}else if($(window).scrollTop()>600){
 			$gall.css("background-image","url('../img/joystick.jpg')");
@@ -85,6 +87,7 @@ var interval;
 		}else{
 			$navspan.css("background-color","transparent");
 			$up.slideUp(400);
+			$logo.fadeIn(400);
 		}
 	});
 
@@ -117,7 +120,7 @@ var interval;
 			$body.css("overflow","auto");
 	});
 	}
-	setTimeout(offPreloader,2000);
+	setTimeout(offPreloader,4000);
 
 
 
@@ -193,5 +196,10 @@ var interval;
 
 	}
 	forward();
+/*media query*/
+    if (window.matchMedia('(max-width: 1030px)').matches){
+    	displayAll();
+	}
+
 
 });

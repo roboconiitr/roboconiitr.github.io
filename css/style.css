@@ -71,21 +71,34 @@ header{
 #head p{
 	position: relative;
 	z-index: 1;
-	top:-19.15vw;
 	color: #fff;
-	font-size: 25px;
+	font-size: 1.91vw;
 	text-align: center;
 	font-family: 'myraid';
 
 }
 #head i{
-	font-size: 20px;
+	font-size: 1.53vw;
 	padding: 0.77vw;
 }
 .smallHead2,.smallHead3{
 	display: none;
 }
-
+.textslide{
+	position: relative;
+	top: -19.15vw;
+	height: 3.065vw;
+	overflow:hidden;
+}
+.logo{
+	position:fixed;
+	right: 2%;
+	top: 2%;
+	width: 8vw;
+	height: 8vw;
+	z-index: 2;
+	filter: grayscale(100%);
+}
 /*Only h1*/
 h1{
 	line-height: 45.98vw;
@@ -102,7 +115,7 @@ h1{
 	opacity: 0.3;
 	color: #fff;
 	background: #2b2b2b;
-	padding: 0.383vw;
+	padding: 0  0.383vw 0.383vw;
 	right: 0.77vw;
 	bottom: 0.77vw;
 	transition: opacity 0.3s;
@@ -123,7 +136,7 @@ h1{
 	transition: background 0.5s ease;
 }
 .menu{
-	font-size: 26px;
+	font-size: 2vw;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	font-weight: 600;
@@ -140,6 +153,7 @@ button,#open-btn{
 	background: transparent;
 }
 #open-btn i{
+	font-size: 2.45vw;
 	padding:0.77vw;
 	padding-top: 1.15vw;
 }
@@ -152,6 +166,9 @@ button,#open-btn{
 	bottom: 9.4vw;
 	color: #2b2b2b;
 	transition: all 0.3s;
+}
+#close-btn i{
+	font-size: 2.45vw;
 }
 /*side slide navbar*/
 #navbar{
@@ -182,6 +199,7 @@ ul{
 	border-right: 3px #2b2b2b solid;
 	opacity: 0.6;
 	text-shadow: 1px 1px 3px #fff;
+	cursor: pointer;
 }
 
 
@@ -198,14 +216,17 @@ h2{
 	position: relative;
 	background: #fff;
 	white-space:normal;
+	height: 68,73vw;
 	width: 100%;
 	opacity: 0.9;
+	overflow: hidden;
+
 }
 .about h2{
 	text-align:left;;
 	padding: 3.06vw 6.5vw;
 	font-weight: 500;
-	font-size: 42px;
+	font-size: 3.21vw;
 	color: #000;
 }
 .about>p{
@@ -221,6 +242,7 @@ h2{
 .testimonials{
 	display: none;
 	height: 30.95vw;
+	overflow: hidden;
 }
 .item{
 	width: 100%;
@@ -371,10 +393,10 @@ iframe{
 	height: 45vw;
 	width: 100%;
 	text-align: center;
-	overflow-y: hidden;
+	overflow: hidden;
 }
 .lib_gal>div{
-	padding: 30px;
+	padding: 2.29vw;
 	height: 45vw;
 	float: left;
 }
@@ -389,7 +411,7 @@ iframe{
 	height: 45vw;
 }
 .gall h3{
-	padding-bottom: 20px;
+	padding-bottom: 1.53vw;
 	color: #fff;
 }
 .expgall{
@@ -413,8 +435,8 @@ iframe{
 /*gallery image slider*/
 .slider{
 	margin:auto;
-	width: 650px;
-	height: 370px;
+	width: 49.8vw;
+	height: 28.35vw;
 	background: transparent;
 	overflow:hidden;
 }
@@ -424,7 +446,7 @@ iframe{
 .slider img{
 	position: relative;
 	width: 100%;
-	height: 30vw;
+	height: 28.35vw;
 }
 .slides{
 	height: 38.31vw;
@@ -487,15 +509,15 @@ iframe{
 }
 
 .hovereffect a::before {
-	-webkit-transform: translateY(-20px);
-	-moz-transform: translateY(-20px);
-	transform: translateY(-20px);
+	-webkit-transform: translateY(-1.53vw);
+	-moz-transform: translateY(-1.53vw);
+	transform: translateY(-1.53vw);
 }
 
 .hovereffect a::after {
-	-webkit-transform: translateY(20px);
-	-moz-transform: translateY(20px);
-	transform: translateY(20px);
+	-webkit-transform: translateY(1.53vw);
+	-moz-transform: translateY(1.53vw);
+	transform: translateY(1.53vw);
 }
 
 .hovereffect a:hover,
@@ -590,6 +612,19 @@ iframe{
 	float: left;
 	width: 40%;
 	height: 38.31vw;
+	overflow-y: auto;
+}
+.contact_l::-webkit-scrollbar {
+    width: 2%;
+}
+ 
+.contact_l::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.contact_l::-webkit-scrollbar-thumb {
+  background-color: #777;
+  outline: 1px solid #333;
 }
 .contact_r{
 	float: right;
@@ -627,7 +662,7 @@ footer{
 	position: relative;
 	color: #fff;
 	font-family: 'myraid';
-	font-size: 24px;
+	font-size: 1.83vw;
 	width: 100%;
 	height: 15.32vw;
 	margin: auto;
@@ -804,5 +839,4 @@ form textarea {
 .covers span:nth-child(5) { animation-delay: .571428s; }
 .covers span:nth-child(6) { animation-delay: .714285s; }
 .covers span:nth-child(7) { animation-delay: .857142s; }
-
 

@@ -6,9 +6,9 @@
 
 /* Navigaiton Page for gallery */
 .navpage{
-   background-attachment: fixed;
-   background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("../img/galleryback.jpg");
+   background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/roboback2.jpg");
    background-position:center ;
+   background-attachment: fixed;
    min-height: 100vh;
    position: absolute;
    width: 100%;
@@ -28,7 +28,7 @@
    text-align: center;
    height: 200px;
    color: #aaa;
-   background: rgba(0,0,0,0.8);
+   background: rgba(0,0,0,0.5);
    font-family: 'Roboto', sans-serif;
    cursor: pointer;
    min-width: 300px;
@@ -50,7 +50,7 @@
 .nav{
   padding: 0.5%;
   display: block;
-  background:rgba(0,0,0,0.4);
+  background:rgba(0,0,0,0.6);
   font-family: 'Source Sans Pro', sans-serif;
   overflow: visible;  
   position: fixed;
@@ -66,13 +66,20 @@
   display: inline;
   color: #fff;
   font-size: 20px;
-  padding: 0.25vw;
+  padding: 0.8vw;
   cursor: pointer;
+  transition: 0.3s all ease;
 }
 .nav li a {
     color: #fff;
     display: block;
     font-size: 20px;
+    letter-spacing: 1px;
+}
+.nav li:hover{
+  border-bottom: 2px solid #fff;
+  opacity: 0.7;
+  text-shadow: 1px 1px 2px #eee;
 }
 
 a{
@@ -206,7 +213,7 @@ a{
    font-weight: 700;
    color: #ccc;
    text-align: center;
-   padding: 2% 0;
+   padding:6% 0 2% 0;
    margin-top: 30px;
 }
 .galpagehead{
